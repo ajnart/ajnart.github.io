@@ -8,9 +8,9 @@
 particlesJS("header", {
   "particles": {
     "number": {
-      "value": 34,
+      "value": 50,
       "density": {
-        "enable": true,
+        "enable": false,
         "value_area": 481.0236182596568
       }
     },
@@ -24,7 +24,7 @@ particlesJS("header", {
         "color": "#5469a4"
       },
       "polygon": {
-        "nb_sides": 4
+        "nb_sides": 6
       },
       "image": {
         "src": "img/github.svg",
