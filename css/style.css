@@ -920,7 +920,6 @@ a:hover, a:active, a:focus {
 
 .header-title {
   margin-bottom: 8px;
-  text-transform: capitalize;
   letter-spacing: 0.02em;
   font-size: 17px;
   font-weight: 600;
@@ -1448,6 +1447,9 @@ a:hover, a:active, a:focus {
 }
 
 @media print {
+  .pagebreak {
+    page-break-before: always;
+  }
   body {
     background-color: #ffffff !important;
   }
