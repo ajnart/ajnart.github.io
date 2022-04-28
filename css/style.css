@@ -805,7 +805,7 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
-  font-size: 14px;
+  font-size: 12px;
   background-color: #eaf0f7;
   font-family: "IBM Plex Sans", sans-serif;
   color: #50649c;
@@ -904,12 +904,17 @@ a:hover, a:active, a:focus {
 }
 
 .section {
+  padding: 10px 20px !important;
+  position: relative;
+}
+
+.section-main {
   padding: 50px 20px !important;
   position: relative;
 }
 
 .section-md {
-  padding: 30px 20px !important;
+  padding: 0px 20px !important;
   position: relative;
 }
 
@@ -933,7 +938,7 @@ a:hover, a:active, a:focus {
   height: 3px;
   width: 80px;
   position: absolute;
-  top: 32px;
+  top: 18px;
   left: 16px;
   border: 1px dotted #f1646c;
   border-radius: 63px;
@@ -976,7 +981,7 @@ a:hover, a:active, a:focus {
   right: 0;
   top: 0;
   z-index: 100;
-  padding: 14px 0;
+  padding: 2px 0;
 }
 
 .navbar-brand {
@@ -1197,7 +1202,7 @@ a:hover, a:active, a:focus {
 }
 
 .resume-icon i {
-  font-size: 52px;
+  font-size: 42px;
   color: #dbe0ec;
 }
 

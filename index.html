@@ -48,15 +48,15 @@
       </div>
     </nav>
     <!--end nav-->
-    <div class="main-wraper mt-3">
-      <section class="section bg-profile clip-profile" id="header">
+    <div class="main-wraper mt-0">
+      <section class="section-main bg-profile clip-profile" id="header">
         <div class="zoo-profile">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-print-6 align-self-center mb-3 mb-lg-0">
                 <div class="zoo-profile-main">
                   <div class="zoo-profile-main-pic">
-                    <img src="images/main.jpg" alt="" class="rounded-circle mt-1" />
+                    <img src="images/main.jpg" alt="" class="rounded-circle mt-0" />
                   </div>
                   <!--end zoo-profile-main-pic-->
                   <div class="zoo-profile_user-detail">
@@ -77,7 +77,7 @@
               </div>
               <div class="col-sm-4 col-print-4 ml-auto">
                 <ul class="list-unstyled personal-detail print">
-                  <li class="mt-2">
+                  <li>
                     <i class="uil uil-github mt-2 mr-2"></i
                     ><a class="text-white" target="_blank" href="https://github.com/ajnart"><b>Github:</b> Ajnart</a>
                   </li>
@@ -85,12 +85,21 @@
                     <i class="'uil uil-phone-volume mr-2"></i
                     ><a class="text-white" href="tel:+33677259540"> <b> Tél :</b> +33 6 77 25 95 40</a>
                   </li>
-                  <li class="mt-2">
+                  <li>
                     <i class="uil uil-envelope mt-2 mr-2"></i
                     ><a class="text-white" href="mailto:thomas.camlong@epitech.eu"
                       ><b>Mail :</b> thomas.camlong@epitech.eu</a
                     >
                   </li>
+                  <li><i class="uil uil-location mt-2 mr-2"></i><text class="text-white">Bordeaux, France </text></li>
+                  <button type="button" class="text-white no-print btn btn-sm btn-soft-primary">
+                    <a target="_blank" class="text-white" href="https://github.com/ajnart">GitHub </a
+                    ><i class="uil-github"></i>
+                  </button>
+                  <button type="button" class="text-white no-print btn btn-sm btn-soft-primary">
+                    <a target="_blank" class="text-white" href="https://linkedin.com/in/thomas-camlong">LinkedIn </a
+                    ><i class="uil-linkedin"></i>
+                  </button>
                 </ul>
               </div>
             </div>
@@ -103,45 +112,17 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h4 class="header-title mb-3">À propos:</h4>
+              <h4 class="header-title mb-1">À propos:</h4>
             </div>
-            <div class="col-sm-6 col-6">
-              <h4 class="text-primary font-weight-bold">Thomas Camlong</h4>
-
+            <div class="">
               <p>
-                Étudiant de 21 ans en 4ème année à EPITECH Bordeaux.<br />
-                Je suis actuellement en <b>recherche d'un stage de 4 mois</b> jusqu'à mon départ pour le Japon en
-                septembre.<br />Je suis passionné par le développement l'apprentissage de nouvelles technologies comme
-                le machine learning, le développement embarqué et le Web3.<br />Je suis également photographe amateur de
-                portraits et de photographie de rue. Actuellement entrain de créer un portfolio où je compte afficher
-                mes plus belles photos et créations sur <a target="_blank" href="http://ajnart.fr"><b>ajnart.fr</b></a
+                Étudiant de 21 ans en 4ème année à EPITECH Bordeaux. Je suis actuellement en
+                <b>recherche d'un stage de 4 mois</b> jusqu'à mon départ pour le Japon en septembre.<br />Je suis
+                passionné par le développement, l'apprentissage de nouvelles technologies comme le machine learning, le
+                développement embarqué et le Web3.<br />Je suis également photographe amateur de portraits et de
+                photographie de rue.<br />Présentement en train de créer un portfolio où je compte afficher mes plus
+                belles photos et créations sur <a target="_blank" href="http://ajnart.fr"><b>ajnart.fr</b></a
                 >.
-              </p>
-              <button type="button" class="no-print btn btn-sm btn-soft-primary">
-                <a target="_blank" href="https://github.com/ajnart">GitHub </a><i class="uil-github"></i>
-              </button>
-              <button type="button" class="no-print btn btn-sm btn-soft-primary">
-                <a target="_blank" href="https://linkedin.com/in/thomas-camlong">LinkedIn </a
-                ><i class="uil-linkedin"></i>
-              </button>
-            </div>
-            <div class="col-sm-5 col-print-5 offset-lg-1 align-self-center">
-              <p>
-                <span class="personal-detail-title">Nom</span>
-                <span class="personal-detail-info">Thomas Camlong</span>
-              </p>
-              <p>
-                <span class="personal-detail-title">Date de naissance</span>
-                <span class="personal-detail-info">03 jan. 2001</span>
-              </p>
-              <p>
-                <span class="personal-detail-title">Langues</span>
-                <span class="personal-detail-info">English - Bilingue (955/970 au Tepitech)</span>
-                <span class="personal-detail-info">Français - Langue maternelle</span>
-              </p>
-              <p>
-                <span class="personal-detail-title">Adresse</span>
-                <span class="personal-detail-info">Bordeaux (France)</span>
               </p>
             </div>
           </div>
@@ -151,9 +132,6 @@
       <section class="section-md">
         <div class="container">
           <div class="row">
-            <div class="col-12">
-              <h4 class="header-title mb-3">Compétences en programmation et expériences</h4>
-            </div>
             <div class="col-sm-6 col-print-6">
               <div class="resume-icon">
                 <i class="uil uil-code"></i>
@@ -165,20 +143,60 @@
                   <div class="item-info">
                     <h5 class="my-1 text-dark"><i class="devicon-react-plain mr-2"></i>React</h5>
                     <p>
-                      Plusieurs projets open et closed-source utilisant React en utilisant diverses librairies de
-                      composants, notamment:<br />
-                      - Deux projets React Native pour ma 3e année à Epitech (Area et Dashboard)<br />
-                      - Projet de cave à vin connectée sur AWS durant mon stage chez MangroveAI.<br />
-                      Actuellement entrian de travailler sur
+                      Plusieurs projets utilisant React:<br />
+                      - Projets React/native durant ma 3e année à Epitech<br />
+                      - Projet de cave à vin connectée sur AWS durant mon stage chez MangroveAI avec backend AWS.<br />
+                      - Présentement en train de travailler sur
                       <b><a target="_blank" href="http://ajnart.fr">ajnart.fr</a></b>
-                      et d'autres projets personnels.
+                    </p>
+                  </div>
+                </div>
+                <!--end time-item-->
+                <div class="time-item">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark"><i class="devicon-python-plain mr-2"></i>Python</h5>
+                    <p>
+                      - 6 Mois en tant que développeur backend chez LumiTHD, en utilisant<br />
+                      Python, PostgreSQL, Flask et le SDK de QGIS<br />
+                      - Workshop réalisé sur le thème de l'intelligence artificielle, développement d'un CLI en Python
+                      pour interagir avec l'API OpenAI
                     </p>
                   </div>
                 </div>
                 <div class="time-item">
                   <div class="item-info">
-                    <h5 class="my-1 text-dark"><i class="devicon-typescript-plain mr-2"></i>Typescript</h5>
+                    <h5 class="my-1 text-dark"><i class="devicon-docker-plain mr-2"></i>DevOps</h5>
                     <p>
+                      - Docker, Kubernetes, Jenkins, Gitlab, Github actions, Docker Swarm<br />
+                      - Habitude d'utiliser et de créer des environnements docker, CI <br />
+                      <text class="no-print">
+                        - Projets Raspberry PI, déploiement d'une stack de containers pour remplacer un service de
+                      </text>
+                      streaming grâce à du torrenting.<text class="no-print">
+                        Lien GitHub :
+                        <b>
+                          <a target="_blank" href="https://github.com/ajnart/mynetflix">MyNetflix</a>
+                        </b>
+                      </text>
+                    </p>
+                  </div>
+                </div>
+                <div class="time-item no-print">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark"><i class="devicon-rust-plain"></i>Rust</h5>
+                    <p>Bases du langage, intérêt à l'approche</p>
+                  </div>
+                </div>
+                <div class="time-item no-print">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark"><i class="devicon-linux-plain"></i>GNU/Linux</h5>
+                    <p>Utilisation quotidienne depuis 2019</p>
+                  </div>
+                </div>
+                <div class="time-item">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark"><i class="devicon-typescript-plain mr-2"></i>Typescript</h5>
+                    <p class="no-print">
                       Troisième année à Epitech, projets personnels en utilisant React, NextJS, NodeJS, Deno, ExpressJS
                     </p>
                   </div>
@@ -186,13 +204,13 @@
                 <div class="time-item">
                   <div class="item-info">
                     <h5 class="my-1 text-dark"><i class="devicon-cplusplus-plain mr-2"></i>C++</h5>
-                    <p>
+                    <p class="no-print">
                       Deuxième année à Epitech, utilisation sur LeetCode, utilisation du langage pour les compétitions
                       BattleDev, Google CodeJam et Google KickStart.
                     </p>
                   </div>
                 </div>
-                <div class="time-item">
+                <div class="time-item no-print">
                   <div class="item-info">
                     <h5 class="my-1 text-dark"><i class="devicon-c-plain mr-2"></i>C</h5>
                     <p>
@@ -201,45 +219,12 @@
                     </p>
                   </div>
                 </div>
-                <!--end time-item-->
-                <div class="time-item mt-3">
-                  <div class="item-info">
-                    <h5 class="my-1 text-dark"><i class="devicon-python-plain mr-2"></i>Python</h5>
-                    <p>
-                      - 6 Mois en tant que développeur backend chez LumiTHD, en utilisant<br />
-                      Python, PostgreSQL, Flask et le SDK de QGIS<br />
-                      - Google Kickstart round 1 & 2 (2021)<br />
-                      - Workshop réalisé sur le thème de l'intelligence artificielle, développement d'un CLI en Python
-                      pour intéragir avec l'API OpenAI
-                    </p>
-                  </div>
-                </div>
-                <div class="time-item mt-3">
-                  <div class="item-info">
-                    <h5 class="my-1 text-dark"><i class="devicon-docker-plain mr-2"></i>DevOps</h5>
-                    <p>
-                      - Docker, Kubernetes, Jenkins, Gitlab, Github actions, Docker Swarm<br />
-                      - Habitude d'utiliser et de créer des environnements docker, CI <br />
-                      - Projets Raspberry PI, déploiement d'une stack de containers pour remplacer un service de
-                      streaming grâce à du torrenting. Lien GitHub :
-                      <b>
-                        <a target="_blank" href="https://github.com/ajnart/mynetflix">MyNetflix</a>
-                      </b>
-                    </p>
-                  </div>
-                </div>
-                <div class="time-item mt-3">
-                  <div class="item-info">
-                    <h5 class="my-1 text-dark"><i class="devicon-linux-plain"></i>GNU/Linux</h5>
-                    <p>Utilisation quotidienne depuis 2019</p>
-                  </div>
-                </div>
               </div>
             </div>
             <div class="col-sm-6 col-print-6">
               <div class="resume-icon">
                 <i class="uil uil-suitcase-alt"></i>
-                <h5 class="mt-n2">Éxperiences professionnelles</h5>
+                <h5 class="mt-n2 mb-0">Éxperiences professionnelles</h5>
               </div>
               <!--end resume-icon-->
               <div class="timeline">
@@ -250,11 +235,9 @@
                       <a target="_blank" href="https://mangrove.ai/fr">MangroveAI - AWS Cloud Architect</a>
                     </h5>
                     <p>
-                      - Développement d'un service de cave à win connectée en utilisant un front-end React et un backend
-                      AWS<br />
-                      - Aide à un projet de Datascience pour une entreprise de croisière de Luxe<br />
-                      - Formation au cloud AWS grâce à la formation "AWS Certified Solutions Architect Associate
-                      SAA-C02" sur A Cloud Guru.
+                      - Développement d'un service de cave à vins connectée en utilisant un front-end React et un
+                      backend AWS<br />
+                      - Formation au cloud AWS grâce à la formation "SAA-C02" sur A Cloud Guru.
                     </p>
                   </div>
                 </div>
@@ -265,9 +248,9 @@
                     <h5 class="my-1 text-dark">
                       <a target="_blank" href="https://lumithd.fr/">Lumi THD - Développeur back-end en Python</a>
                     </h5>
-                    <p>
-                      Participation active au sprints agiles, développement du produit principal en Python<br />
-                      - Monorepo en Python, développement modulaire sous forme de dynamic imports, prépartition à la
+                    <p>Participation active aux sprints agiles, développement du produit principal en Python<br /></p>
+                    <p class="no-print">
+                      - Monorepo en Python, développement modulaire sous forme de dynamic imports, préparation à la
                       migration vers les metaclasses<br />
                       - Utilisation de la librairie Flask pour le développement du front-end<br />
                       - Utilisation de la librairie PostgreSQL pour la base de données<br />
@@ -278,19 +261,19 @@
                   <div class="item-info">
                     <div class="font-14">Juin - Juillet 2016</div>
                     <h5 class="my-1 text-dark">
-                      <a target="_blank" href="http://www.appleandkoffee.fr/">Graphiste</a>
+                      <a target="_blank" href="http://www.appleandkoffee.fr/">Apple & Koffee - Graphiste</a>
                     </h5>
                     <p>
-                      Stage de 3ème en tant que graphiste chez Apple & Koffee. Apprentissage des régles fondamentales du
-                      design à l'aide du design system de Google, intérêt au dessin vectoriel et à la colorimétrie
+                      Stage de 3ème en tant que graphiste. Apprentissage des régles fondamentales du design à l'aide du
+                      design system de Google, intérêt au dessin vectoriel et à la colorimétrie
                     </p>
                   </div>
                 </div>
-                <div class="ml-3 resume-icon">
+                <div class="ml-3 resume-icon no-print">
                   <i class="uil uil-github"></i>
                   <h5 class="mt-n2">Open source</h5>
                 </div>
-                <div class="time-item mt-3">
+                <div class="time-item no-print">
                   <div class="item-info">
                     <div class="font-14">Jui. 2020</div>
                     <h5 class="my-1 text-dark">
@@ -301,7 +284,7 @@
                 </div>
 
                 <!--end time-item-->
-                <div class="time-item mt-3">
+                <div class="time-item no-print">
                   <div class="item-info">
                     <div class="font-14">Jan. 2016 - 2017</div>
                     <h5 class="my-1 text-dark">
@@ -317,7 +300,7 @@
                 </div>
                 <!--end time-item-->
 
-                <div class="time-item mt-3">
+                <div class="time-item no-print">
                   <div class="item-info">
                     <div class="font-14">2015 & 2018</div>
                     <h5 class="my-1 text-dark">
@@ -336,12 +319,9 @@
           </div>
         </div>
       </section>
-      <section class="section-md pagebreak mt-3">
+      <section class="section-md">
         <div class="container">
           <div class="row">
-            <div class="col-12">
-              <h4 class="header-title mb-3">Soft skills, intérêts et éducation</h4>
-            </div>
             <div class="col-sm-6 col-print-6">
               <div class="resume-icon">
                 <i class="uil uil-graduation-hat"></i>
@@ -349,7 +329,7 @@
               </div>
               <!--end resume-icon-->
               <div class="timeline">
-                <div class="time-item">
+                <div class="time-item no-print">
                   <div class="item-info">
                     <div class="font-14">Arvil. - Juillet 2021</div>
                     <h5 class="my-1 text-dark">Flutter App Dev. - Udemy</h5>
@@ -364,7 +344,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="time-item mt-3">
+                <div class="time-item">
                   <div class="item-info">
                     <div class="font-14">2021</div>
                     <h5 class="my-1 text-dark">Flullstack Web Dev. - Udemy</h5>
@@ -380,7 +360,7 @@
                   </div>
                 </div>
                 <!--end time-item-->
-                <div class="time-item mt-3">
+                <div class="time-item no-print">
                   <div class="item-info">
                     <div class="font-14">2019 - Present</div>
                     <h5 class="my-1 text-dark">Epitech</h5>
@@ -411,30 +391,33 @@
                 <h5 class="my-1 text-dark"><i class="uil uil-camera mr-2"></i>Photographie</h5>
                 <div class="time-item">
                   <div class="item-info">
-                    <p>Photographie de rue avec mon 85mm et argentique</p>
-                    <p>Photographie de portraits amateur depuis 2017</p>
-                    <p>Grâce à mon Fuji XT-20 et de mes objectifs 56mm et 35mm</p>
                     <p>
-                      Quelques photos disponnibles sur mon
+                      Photographie de rue avec mon 85mm et argentique<br />
+                      Photographie de portraits amateur depuis 2017 Grâce à mon Fuji XT-20 et de mes objectifs 56mm et
+                      35mm Quelques photos disponibles sur mon
                       <b><a target="_blank" href="https://instagram.com/fuggof">instagram</a></b>
                     </p>
                   </div>
                 </div>
-                <div class="time-item mt-3">
+                <div class="time-item">
                   <div class="item-info">
                     <h5 class="my-1 text-dark">Méthodes de travail</h5>
-                    <p>- Habitué au développement en TDD</p>
-                    <p>- Organisation, rigeur, autonomie</p>
-                    <p>- Méthode agile, scum</p>
-                    <p>- Habitué aux travaux de groupe grâce à ma formation à Epitech</p>
+                    <p>
+                      - Habitué au développement en TDD<br />
+                      - Organisation, rigueur, autonomie<br />
+                      - Méthode agile, scrum<br />
+                      - Habitué aux travaux de groupe grâce à ma formation à Epitech
+                    </p>
                   </div>
                 </div>
-                <div class="time-item mt-3">
+                <div class="time-item">
                   <div class="item-info">
                     <h5 class="my-1 text-dark">Langues</h5>
-                    <p>- Français : Langue maternelle</p>
-                    <p>- Anglais : 955/990 Tepitech (équivalent TOEIC, niveau bilingue)</p>
-                    <p>- Japonais : Duolingo depuis 4 mois pour préparer mon année à Tokyo</p>
+                    <p>
+                      - Français : Langue maternelle<br />
+                      - Anglais : 955/990 Tepitech (équivalent TOEIC, niveau bilingue)<br />
+                      - Japonais : Duolingo depuis 4 mois pour préparer mon année à Tokyo
+                    </p>
                   </div>
                 </div>
                 <!--end time-item-->
