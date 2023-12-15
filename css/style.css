@@ -1671,13 +1671,6 @@ a:focus {
 }
 
 @media print {
-  a:link {
-    border-bottom: none !important;
-    text-decoration: none !important;
-  }
-  a[href]:after {
-    content: none !important;
-  }
   .pagebreak {
     page-break-before: always;
   }
