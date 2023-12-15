@@ -18,7 +18,7 @@ particlesJS("header", {
       "value": "#808fb9"
     },
     "shape": {
-      "type": "triangle",
+      "type": "square",
       "stroke": {
         "width": 0,
         "color": "#5469a4"
