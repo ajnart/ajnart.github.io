@@ -1138,10 +1138,10 @@ a:focus {
 .header-title {
   margin-bottom: 8px;
   letter-spacing: 0.02em;
-  font-size: 17px;
+  font-size: 15Zpx;
   font-weight: 600;
   margin-top: 0;
-  color: #1a253f;
+  color: #4d79f6;
   text-shadow: 0 0 1px rgba(239, 242, 249, 0.1);
 }
 
@@ -1289,6 +1289,10 @@ a:focus {
   margin-bottom: 6px;
 }
 
+.zoo-user-name {
+  font-size: 28px;
+}
+
 .zoo-profile .zoo-profile-main .zoo-profile_user-detail .zoo-user-name-post {
   color: #a4abc5;
 }
@@ -1415,8 +1419,13 @@ a:focus {
 }
 
 .resume-icon i {
-  font-size: 42px;
-  color: #dbe0ec;
+  font-size: 24px;
+  color: #4d79f6;
+}
+
+.text-intro {
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .timeline {
@@ -1439,8 +1448,8 @@ a:focus {
   width: 10px;
   height: 10px;
   margin-left: -6px;
-  background-color: #f1f5fa;
-  border-color: #4d79f6;
+  background-color: #4d79f6;
+  border-color: #ffffff;
   border-style: solid;
   border-width: 2px;
   border-radius: 10px;
@@ -1456,6 +1465,10 @@ a:focus {
 .timeline .item-info {
   margin-left: 15px;
   margin-bottom: 15px;
+}
+
+.timeline .item-info h5 {
+  font-size: 16px;
 }
 
 .container-filter {
@@ -1669,77 +1682,23 @@ a:focus {
     display: none !important;
   }
 }
-
 @media print {
-  .pagebreak {
-    page-break-before: always;
-  }
-  body {
-    background-color: #ffffff !important;
-  }
   .no-print {
     display: none !important;
   }
-  .main-wraper {
-    margin: 0 !important;
+    @page {
+        margin: 0 !important;
+        max-width: 100% !important;
+    }
+    body {
+        margin: 0 !important;
+    }  
+  body {
+      font-size: 12px !important;
   }
-  .thanks-text {
-    display: block;
-  }
-  .my-work,
-  .bg-funfact,
-  .my-clients,
-  .contact-form,
-  .footer-area {
-    display: none;
-  }
-  .col-print-1 {
-    width: 8%;
-    float: left;
-  }
-  .col-print-2 {
-    width: 16%;
-    float: left;
-  }
-  .col-print-3 {
-    width: 25%;
-    float: left;
-  }
-  .col-print-4 {
-    width: 33%;
-    float: left;
-  }
-  .col-print-5 {
-    width: 42%;
-    float: left;
-  }
-  .col-print-6 {
-    width: 50%;
-    float: left;
-  }
-  .col-print-7 {
-    width: 58%;
-    float: left;
-  }
-  .col-print-8 {
-    width: 66%;
-    float: left;
-  }
-  .col-print-9 {
-    width: 75%;
-    float: left;
-  }
-  .col-print-10 {
-    width: 83%;
-    float: left;
-  }
-  .col-print-11 {
-    width: 92%;
-    float: left;
-  }
-  .col-print-12 {
-    width: 100%;
-    float: left;
+  .header-title {
+      font-size: 18px !important;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
