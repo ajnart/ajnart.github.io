@@ -1164,6 +1164,14 @@ a:focus {
   font-size: 15px;
 }
 
+.skills {
+  font-size: 12px;
+}
+
+ul {
+  padding-inline-start: 1em;
+}
+
 .cd-headline.loading-bar .cd-words-wrapper::after {
   content: '';
   position: absolute;
