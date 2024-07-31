@@ -1057,7 +1057,7 @@ h6 {
 p {
   line-height: 1.6;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.1px;
 }
 
@@ -1438,7 +1438,7 @@ ul {
 
 .timeline {
   position: relative;
-  margin-top: 30px;
+  margin-top: 8px;
   border-left: 2px dotted #dbe0ec;
 }
 
