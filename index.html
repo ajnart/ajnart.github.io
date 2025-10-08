@@ -18,6 +18,25 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="css/icons.css" rel="stylesheet" type="text/css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+<!-- Cal.com booking script -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "30min", { origin: "https://app.cal.com" });
+  Cal.ns["30min"]("ui", { "hideEventTypeDetails": false, "layout": "month_view" });
+</script>
+
+<style>
+  @media print {
+    a {
+      text-decoration: none !important;
+      color: inherit !important;
+    }
+
+    a:hover {
+      text-decoration: none !important;
+    }
+  }
+</style>
 </head>
 
 <body>
@@ -41,10 +60,14 @@
                       <a target="_blank" class="text-white" href="https://github.com/ajnart">GitHub: ajnart </a><i
                         class="uil-github"></i>
                     </button>
-                    <button type="button" class="text-white btn btn-sm btn-soft-primary">
+                    <button type="button" class="text-white btn btn-sm btn-soft-primary mr-2">
                       <a target="_blank" class="text-white" href="https://linkedin.com/in/thomas-camlong">LinkedIn:
                         thomas-camlong
                       </a><i class="uil-linkedin"></i>
+                    </button>
+                    <button type="button" class="text-white btn btn-sm btn-soft-primary no-print" data-cal-link="ajnart/30min"
+                      data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}'>
+                      <span class="text-white">Let's talk</span><i class="uil-calendar-alt"></i>
                     </button>
                   </div>
                 </div>
@@ -73,11 +96,9 @@
             <div class="container mb-5">
               <div class="row">
                 <div class="container mb-3 mt-3 text-white text-intro">
-                  Graduating software engineer from Epitech (September 2024).
-                  Proven track record in professional and open-source projects, specializing in solving complex problems
-                  through innovative programming solutions. Experienced in full-stack development, with a focus on
-                  React, TypeScript, and serverless. Seeking a full-time software engineering role in Paris,
-                  with openness to relocation within France/Europe for the right opportunity
+                  Full-stack engineer with expertise in React, TypeScript, and modern web technologies.
+                  Built products from idea to production, including open-source projects.
+                  Seeking exciting opportunities and work on challenging and impactful projects.
                 </div>
               </div>
             </div>
@@ -89,213 +110,153 @@
     <section class="section-md">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-print-6">
+          <div class="col-sm-12 col-print-12">
             <div class="resume-icon">
-              <h4 class="mt-2 mb-0"> <i class="uil uil-suitcase-alt"></i>Professional experiences</h4>
+              <h4 class="mt-4 mb-0"> <i class="uil uil-suitcase-alt"></i>Professional Experiences</h4>
             </div>
             <!--end resume-icon-->
+          </div>
+          </div>
+          <div class="row">
+            <!-- Column 1 -->
+            <div class="col-sm-6 col-print-6">
             <div class="timeline">
-
+              <!-- Position 1,1: Habs AI (Most Recent) -->
               <div class="time-item">
                 <div class="item-info">
-                  <h5 class="my-1 text-dark"><a href="https://www.datadoghq.com/">Software Engineering at
+                  <h5 class="my-1 text-dark"><a href="https://habs.ai">Full-Stack Software Engineer at <b>Habs AI</b></a></h5>
+                  <div class="font-14">Jan 2025 - Present · Full-time · Paris, France</div>
+                  <ul>
+                    <li>Built web platform for neuroscience/AI company specializing in brainwave analysis</li>
+                    <li>Developed EEG data visualization tools and metrics extraction</li>
+                    <li>Contributed to Brainwaves-as-a-Service (BaaS) platform for healthcare and robotics</li>
+                  </ul>
+                  <p class="skills"><b>Skills:</b> React · TypeScript · Data Visualization · AI/ML</p>
+                </div>
+              </div>
+
+              <!-- Position 2,1: Datadog -->
+              <div class="time-item mt-3">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark"><a href="https://www.datadoghq.com/">Software Engineering Intern at
                       <b>Datadog</b></a></h5>
                   <div class="font-14">Mar 2024 - Sep 2024 · 6 months internship</div>
                   <ul>
-                    <li>
-                      Contributed to Datadog's flagship <a href="https://docs.datadoghq.com/dashboards/">dashboard</a>
-                      product using React and internal UI library
-                    </li>
-                    <li>
-                      Implemented new features and improved existing functionality, enhancing user experience
-                    </li>
-                    <li>
-                      Collaborated closely with PMs, backend engineers, and design team to bring mock-ups to life
-                    </li>
-                    <li>
-                      Optimized performance and successfully handled package migrations
-                    </li>
-                    <li>
-                      Rapidly improved engineering skills through exposure to Datadog's high standards and best
-                      practices
-                    </li>
-                    <li>
-                      Participated in code reviews, ensuring high code quality and adherence to best practices
-                    </li>
+                    <li>Contributed to flagship dashboard product using React and internal UI library</li>
+                    <li>Implemented new features and optimized performance for package migrations</li>
+                    <li>Participated in code reviews ensuring high code quality standards</li>
                   </ul>
-                  <p class="skills"><b>Skills:</b> React · UI · TypeScript · GitHub · Redux · ReactQuery · CI/CD · Jest
-                    · Less · Grafana · Data visualization</p>
+                  <p class="skills"><b>Skills:</b> React · TypeScript · Redux · ReactQuery · CI/CD</p>
                 </div>
               </div>
 
-              <div class="time-item mt-3">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark"><a href="https://github.com/ajnart/homarr">Open-Source app
-                      with 140k MAU - <b>Homarr</b></a></h5>
-                  <div class="font-14">Mar 2022 - Ongoing</div>
-                  <ul>
-                    <li>
-
-                      Founded and led development of an open-source project with 70k daily users
-                    </li>
-                    <li>
-
-                      Managed a team of 5 contributors, handling daily GitHub issues/PRs
-                    </li>
-                    <li>
-
-                      Built the project using modern web technologies (NextJS, TypeScript, Docker)
-                    </li>
-                    <li>
-                      Leveraged community collaboration and user feedback to drive development
-                    </li>
-
-                  </ul>
-                  <p class="skills">
-                    <b>Skills:</b> NextJS · TypeScript · Docker · GitHub · React · Managing a
-                    team · CI/CD · DevOps · Testing · Software Architecture
-                  </p>
-                </div>
-              </div>
-
+              <!-- Position 3,1: CreativeLift -->
               <div class="time-item mt-3">
                 <div class="item-info">
                   <h5 class="my-1 text-dark"><a href="https://www.linkedin.com/company/creative-lift/">React Developer
-                      at <b>CreativeLift</b></a></h5>
+                      Intern at
+                      <b>CreativeLift</b></a></h5>
                   <div class="font-14">Apr 2022 - Sep 2022 · 6 months internship</div>
                   <ul>
-                    <li>Developed key frontend components for SaaS solution, improving user engagement</li>
-                    <li>Implemented 80+ reusable React Material UI-based components in the design system</li>
-                    <li>Built and maintained a Storybook for component documentation and testing</li>
-                    <li>Successfully managed remote work while maintaining high productivity</li>
-                    <li>Utilized NextJS, TypeScript, and Gitlab in daily development workflows</li>
+                    <li>Developed 80+ reusable React Material UI components for design system</li>
+                    <li>Built and maintained Storybook for component documentation</li>
+                    <li>Utilized NextJS, TypeScript, and Gitlab in development workflows</li>
                   </ul>
-                  <p class="skills"><b>Skills:</b> NextJS · Storybook · MUI · Gitlab · TypeScript ·
-                    React
-                  </p>
-                </div>
-              </div>
+                  <p class="skills"><b>Skills:</b> NextJS · MUI · TypeScript · React</p>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
 
-              <div class="time-item  mt-3">
-                <div class="item-info">
-
-                  <h5 class="my-1 text-dark"><a href="https://www.linkedin.com/company/mangrove-ai/">Cloud
-                      Architect
-                      AWS at <b>MangroveAI</b></a></h5>
-                  <div class="font-14">Oct 2021 - Mar 2022 · 6 months internship</div>
-                  <ul>
-                    <li>Developed scalable MVP for connected wine cellar service using React and AWS serverless
-                      technologies</li>
-                    <li>Optimized AWS infrastructure for cost-efficiency and scalability</li>
-                    <li>Completed AWS SAA-C02 training, enhancing cloud architecture skills</li>
-                    <li>Assisted in data science project for luxury cruise company, predicting engineering failure
-                      points</li>
-                    <li>Gained hands-on experience with CloudFormation and CI/CD pipelines</li>
-                  </ul>
-                  <p class="skills">
-                    <b>Skills: </b>AWS · React · CloudFormation · Serverless · CI/CD ·
-                    DevOps
-                  </p>
-                </div>
-              </div>
-              <div class="time-item  mt-3 no-print">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark"><a href="http://www.lumithd.fr/">Back-End developper at <b>LumiTHD</b></a>
-                  </h5>
-                  <div class="font-14">Jul 2020 - Dec 2020 · 6 months internship</div>
-                  <ul>
-                    <li>Profiled and optimized Python algorithms, improving performance of key systems</li>
-                    <li>Containerized applications using Docker, facilitating easier deployment and scaling</li>
-                    <li>Developed using a monorepo structure with submodules, PostgreSQL, and Flask</li>
-                    <li>Introduced and implemented Agile methodologies, unit testing, and regression testing</li>
-                    <li>Successfully identified and improved algorithm pain points using optimization techniques</li>
-                  </ul>
-                  <p class="skills">
-                    <b>Skills: </b>Python · Docker · PostgreSQL · Flask · Git · Agile · Unit testing ·
-                    Regression testing
-                  </p>
-                </div>
-              </div>
-              <!--end time-item-->
-            </div>
-            <!--end timeline-->
-          </div>
+          <!-- Column 2 -->
           <div class="col-sm-6 col-print-6">
+            <div class="timeline">
+              <!-- Position 1,2: Kodu AI -->
+              <div class="time-item">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark"><a href="https://kodu.ai">Founding Engineer at <b>Kodu AI</b></a></h5>
+                  <div class="font-14">Aug 2024 - Jan 2025 · 6 months · Full-time · Tokyo, Japan</div>
+                  <ul>
+                    <li>AI coding assistant startup, built frontend and backend infrastructure that wrap LLMs</li>
+                    <li>Enhanced the VSCode extension that is used by 100k+ developers</li>
+                    <li>Introduced reward systems that significantly increased user retention and growth</li>
+                  </ul>
+                  <p class="skills"><b>Skills:</b> Product Development · Backend & Frontend · APIs · Startup · VSCode Extension · LLM</p>
+                </div>
+              </div>
+              <!-- Position 2,2: Open-Source Projects -->
+              <div class="time-item mt-3">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark"><a href="https://github.com/ajnart">Open-Source Projects & Entrepreneurship</a></h5>
+                  <div class="font-14">Mar 2022 - Present</div>
+                  <ul>
+                    <li><b><a href="https://github.com/ajnart/homarr">Homarr</a>:</b> Founded and scaled to 140k+ MAU (70k daily)</li>
+                    <li><b><a href="https://dashboardicons.com">DashboardIcons.com</a>:</b> Created monetized icon
+                      library with 2000+ icons
+                    </li>
+                    <li>Open source maintaining work as well as building the website and optimizing for SEO - 10M+ page views per month</li>
+                  </ul>
+                  <p class="skills"><b>Skills:</b> Product Management · NextJS · Open Source · Entrepreneurship · SEO · AdSense</p>
+                  </div>
+              </div>
+              </div>
+          </div>
+          </div>
+          </div>
+          </section>
+          
+          <!-- Technical Skills Section -->
+          <section class="section-md" style="padding: 40px 0;">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
             <div class="resume-icon">
-              <h4 class="mt-2"> <i class="uil uil-code"></i>Programming</h4>
+              <h4 class="mt-4 mb-3"> <i class="uil uil-code"></i>Technical Skills</h4>
             </div>
-            <!--end resume-icon-->
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-print-6">
             <div class="timeline">
               <div class="time-item">
                 <div class="item-info">
-                  <h5 class="my-1 text-dark"><i class="mr-2 devicon-nextjs-plain"></i> NextJS</h5>
-                  <p>
-                    NextJS has been my primary framework for web development since 2021. Leveragaing its advanced
-                    features to build scalable and performant applications, with a particular focus on optimizing
-                    rendering strategies and implementing robust software architecture.
-                  </p>
+                  <h5 class="my-1 text-dark">Languages</h5>
+                  <p>Languages: TypeScript, JavaScript, Python, Go, Node.js</p>
                 </div>
               </div>
               <div class="time-item">
                 <div class="item-info">
-                  <h5 class="my-1 text-dark"><i class="mr-2 devicon-react-plain"></i> React</h5>
-                  <p>Extensive experience in React since 2020, developed a diverse portfolio of projects. From
-                    interning at Creative Lift and Datadog to personal endeavors such as Homarr. Consistently working to
-                    enhance proficiency in React, implementing complex state management and optimizing component
-                    performance but mostly
-                    learning about all the amazing libraries developped by the community.
-                  </p>
+                  <h5 class="my-1 text-dark">Frontend</h5>
+                  <p>React, NextJS, TailwindCSS, Vite</p>
                 </div>
               </div>
               <div class="time-item">
                 <div class="item-info">
-                  <h5 class="my-1 text-dark"><i class="mr-2 devicon-typescript-plain"></i> TypeScript</h5>
-                  <p>Since 2021, TypeScript has been integral to my development workflow. In personal project, as well
-                    as professional work.
-                    Focusing on implemented advanced TypeScript features, including generics, conditional types, and
-                    templating, thus significantly improving code quality and maintainability as well as developer
-                    experience (DX).
-                    Honned TypeScript skills over time, incorporating newer and more advanced features and
-                    methodologies.
-                  </p>
+                  <h5 class="my-1 text-dark">Backend</h5>
+                  <p>PostgresSQL, Hono, REST APIs, Express, NestJS, Microservices, Go, BaaS</p>
                 </div>
               </div>
-              <div class="time-item mt-3">
+            </div>
+            </div>
+          <div class="col-sm-6 col-print-6">
+            <div class="timeline">
+              <div class="time-item">
                 <div class="item-info">
-                  <h5 class="my-1 text-dark"><i class="mr-2 devicon-javascript-plain"></i>Libraries and Utilities</h5>
-                  <p>
-                    Deeply committed and enthusiastic about learning JavaScript libraries and utilities, including
-                    by not limited to
-                    React Query, Redux, Jotai, React Router, and Zod for validation. I also explore other renowned
-                    libraries
-                    like Immer and Lodas. I aspire to make a codebase the best it can be by using the right tools for
-                    the job while staying mindful of the performance overhead they may bring.
-                  </p>
+                  <h5 class="my-1 text-dark">Cloud & DevOps</h5>
+                  <p>AWS, Docker, CI/CD, PostgreSQL, Git, GitHub Actions, Self-Hosted</p>
                 </div>
               </div>
-              <!--end time-item-->
-              <div class="time-item mt-3">
+              <div class="time-item">
                 <div class="item-info">
-                  <h5 class="my-1 text-dark"><i class="mr-2 devicon-docker-plain"></i>Docker</h5>
-                  <p>I ensure all my projects include a well-optimized Dockerfile, facilitating seamless deployment and
-                    onboarding for new contributors. My Docker expertise extends to multi-stage builds and efficient
-                    image layering for optimal performance.
+                  <h5 class="my-1 text-dark">Testing & Methods</h5>
+                  <p>Jest, Testing Library, Agile, Code Review, System Architecture</p>
                 </div>
               </div>
-              <div class="time-item mt-3">
+              <div class="time-item">
                 <div class="item-info">
-                  <h5 class="my-1 text-dark"><i class="mr-2 devicon-python-plain"></i>Python</h5>
-                  <p>During my time as a backend engineer at LumiTHD, spanning six months, I delved into the
-                    intricacies of Python development and algorithm optimizations.</p>
-                </div>
-              </div>
-              <div class="time-item mt-3">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark"><i class="mr-2 devicon-rust-plain"></i>Rust</h5>
-                  <p>
-                    Rust is a language I have been interested in for a long time. Developing a cross-platform graphical
-                    disk usage analyzer using Rust and a modern UI with React.
-                  </p>
+                  <h5 class="my-1 text-dark">Portfolio</h5>
+                  <p>Visit my <a href="https://github.com/ajnart" target="_blank">GitHub</a> to see proof of work and contributions to
+                    various projects</p>
                 </div>
               </div>
             </div>
@@ -305,15 +266,26 @@
     </section>
     <!-- Apply a page break here -->
     <!-- <div class="mt-5 mb-5" style="page-break-before:always">&nbsp;</div> -->
-    <section class="section-md">
+    <section class="section-md" style="padding-top: 40px;">
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-print-6">
             <div class="resume-icon">
-              <h4 class="mt-2"><i class="uil uil-graduation-hat"></i>Education</h4>
+              <h4 class="mt-4 mb-3"><i class="uil uil-graduation-hat"></i>Education</h4>
             </div>
+
             <!--end resume-icon-->
             <div class="timeline">
+              <div class="time-item">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark">Epitech - Master's Degree in Computer Science</h5>
+                  <div class="font-14">Sep 2019 - Sep 2024</div>
+                  <p>Epitech is an IT school focused on learning programming with a hands-on
+                    project-based learning approach. It is well known for it's hard
+                    "piscine" intensive training period.</p>
+                </div>
+              </div>
+
               <div class="time-item  mt-1">
                 <div class="item-info">
                   <h5 class="my-1 text-dark">Shibaura Institute of technology</h5>
@@ -324,16 +296,7 @@
                 </div>
               </div>
 
-              <!--end time-item-->
-              <div class="time-item  mt-1">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Epitech</h5>
-                  <div class="font-14">Sep 2019 - Sep 2024</div>
-                  <p>Epitech is an IT school focused on learning programming with a hands-on
-                    project-based learning approach. It is well known for it's hard
-                    "piscine" intensive training period.</p>
-                </div>
-              </div>
+
               <!--end time-item-->
 
               <div class="time-item">
@@ -375,17 +338,6 @@
               </div>
               <div class="time-item">
                 <div class="item-info">
-                  <h5 class="my-1 text-dark">Methodology</h5>
-                  <p>
-                    - Experienced in testing and profilign <br />
-                    - Organized, meticulous and autonomous in person and in remote work <br />
-                    - Experience with in an Agile environment<br />
-                    - Accustomed to being held to high standards of quality and rightfullness <br />
-                  </p>
-                </div>
-              </div>
-              <div class="time-item">
-                <div class="item-info">
                   <h5 class="my-1 text-dark">Languages</h5>
                   <p>
                     - French: Native language<br />
@@ -404,7 +356,8 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <p class="copyright mb-0 py-4 last-updated">Updated July 2024 - Thomas "ajnart" Camlong <b><a href="ajnart.github.io">CV website</a></b></p>
+            <p class="copyright mb-0 py-4 last-updated">Updated October 2025 - Thomas "ajnart" Camlong
+            <p>
           </div>
         </div>
       </div>
