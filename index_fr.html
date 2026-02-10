@@ -5,7 +5,20 @@
   <meta charset="utf-8" />
   <title>CV Thomas Camlong</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta content="CV Thomas Camlong" name="description" />
+  <meta content="Thomas Camlong - Ingénieur Logiciel" name="description" />
+
+  <!-- OpenGraph / Share metadata -->
+  <meta property="og:title" content="Thomas Camlong - Ingénieur Logiciel" />
+  <meta property="og:description" content="Ingénieur logiciel passionné par l'open source. Découvrez mon portfolio et contactez-moi." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ajnart.github.io/index_fr.html" />
+  <meta property="og:image" content="https://ajnart.github.io/images/main.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Thomas Camlong - Ingénieur Logiciel" />
+  <meta name="twitter:description" content="Ingénieur logiciel passionné par l'open source. Découvrez mon portfolio et contactez-moi." />
+  <meta name="twitter:image" content="https://ajnart.github.io/images/main.jpg" />
 
   <!-- App favicon -->
   <link rel="shortcut icon" href="images/favicon.ico" />
@@ -18,6 +31,25 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="css/icons.css" rel="stylesheet" type="text/css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+<!-- Cal.com booking script -->
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", "30min", { origin: "https://app.cal.com" });
+  Cal.ns["30min"]("ui", { "hideEventTypeDetails": false, "layout": "month_view" });
+</script>
+
+<style>
+  @media print {
+    a {
+      text-decoration: none !important;
+      color: inherit !important;
+    }
+
+    a:hover {
+      text-decoration: none !important;
+    }
+  }
+</style>
 </head>
 
 <body>
@@ -37,13 +69,18 @@
                 <div class="zoo-profile_user-detail">
                   <h5 class="zoo-user-name">Thomas Camlong</h5>
                   <div class="row">
-                    <button type="button" class="text-white no-print btn btn-sm btn-soft-primary mr-2">
-                      <a target="_blank" class="text-white" href="https://github.com/ajnart">GitHub </a><i
+                    <button type="button" class="text-white btn btn-sm btn-soft-primary mr-2">
+                      <a target="_blank" class="text-white" href="https://github.com/ajnart">GitHub: ajnart </a><i
                         class="uil-github"></i>
                     </button>
-                    <button type="button" class="text-white no-print btn btn-sm btn-soft-primary">
-                      <a target="_blank" class="text-white" href="https://linkedin.com/in/thomas-camlong">LinkedIn
+                    <button type="button" class="text-white btn btn-sm btn-soft-primary mr-2">
+                      <a target="_blank" class="text-white" href="https://linkedin.com/in/thomas-camlong">LinkedIn:
+                        thomas-camlong
                       </a><i class="uil-linkedin"></i>
+                    </button>
+                    <button type="button" class="text-white btn btn-sm btn-soft-primary no-print" data-cal-link="ajnart/30min"
+                      data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}'>
+                      <span class="text-white">Discutons</span><i class="uil-calendar-alt"></i>
                     </button>
                   </div>
                 </div>
@@ -61,23 +98,20 @@
                 </li>
                 <li>
                   <i class="uil uil-envelope mt-2 mr-2"></i><a class="text-white"
-                    href="mailto:thomas@ajnart.fr"><b>Email :</b> thomas@ajnart.fr</a>
+                    href="mailto:thomascamlong@gmail.com"><b>Email :</b> thomascamlong@gmail.com</a>
                 </li>
-                <li><i class="uil uil-location mt-2 mr-2"></i><text class="text-white">Bordeaux, France </text></li>
+                <li>
+                  <i class="uil uil-map-marker-alt mt-2 mr-2"></i><a class="text-white"><b>Localisation :</b> Paris,
+                    France</a>
+                </li>
               </ul>
             </div>
-            <div class="container only-print">
+            <div class="container mb-5">
               <div class="row">
-                <div class="col-12">
-                  <h4 class="header-title text-white mb-1">À propos de moi :</h4>
-                </div>
-                <div class="container mb-5">
-                  <p class="text-white">Étudiant en M1 de 22 ans en informatique à Epitech à Bordeaux, France.
-                    Ancien étudiant à l'Institut de technologie de Shibaura à Tokyo, Japon pendant un an.
-                    <br />Actuellement, je travaille sur Homarr ainsi que sur de nouveaux projets innovants tout en
-                    terminant mes études à Epitech.
-                    Je recherche un stage de fin d'études de 6 mois à partir de mars 2024.
-                  </p>
+                <div class="container mb-3 mt-3 text-white text-intro">
+                  Ingénieur full-stack avec une expertise en React, TypeScript et technologies web modernes.
+                  Construction de produits de l'idée à la production, incluant des projets open-source.
+                  À la recherche d'opportunités stimulantes pour travailler sur des projets ambitieux et impactants
                 </div>
               </div>
             </div>
@@ -86,203 +120,213 @@
       </div>
       <!--end zoo-profile-->
     </section>
-
-    <section class="section-md no-print">
+    <section class="section-md">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <h4 class="header-title mb-1">À propos de moi :</h4>
+          <div class="col-sm-12 col-print-12">
+            <div class="resume-icon">
+              <h4 class="mt-4 mb-0"> <i class="uil uil-suitcase-alt"></i>Expériences Professionnelles</h4>
+            </div>
+            <!--end resume-icon-->
           </div>
-          <div class="">
-            <p>
-            <p>Étudiant de 22 ans en informatique à EPITECH à Bordeaux, France.
-              Ancien étudiant à l'Institut de technologie de Shibaura à Tokyo, Japon pendant un an.
-              Je m'intéresse aux nouvelles tendances et technologies de programmation, notamment mais pas
-              exclusivement : NextJS, Rust, gRPC, Flutter, et plus encore.
-            </p>
-            <p>Actuellement, je travaille sur mon projet <a href="https://homarr.dev">Homarr</a> ainsi que sur de
-              nouveaux projets innovants tout en terminant ma dernière année à EPITECH.</p>
-            </p>
+          </div>
+          <div class="row">
+            <!-- Colonne 1 : 3 premières expériences -->
+            <div class="col-sm-6 col-print-6">
+            <div class="timeline">
+              <!-- Poste 1 : Habs AI (Plus récent) -->
+              <div class="time-item">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark"><a href="https://habs.ai">Ingénieur Logiciel Full-Stack chez <b>Habs AI</b></a></h5>
+                  <div class="font-14">Jan 2025 - Présent · Temps plein · Paris, France</div>
+                  <ul>
+                    <li>Construction de la plateforme web pour une entreprise de neurosciences/IA spécialisée dans l'analyse des ondes cérébrales</li>
+                    <li>Développement d'outils de visualisation de données EEG et d'extraction de métriques</li>
+                    <li>Contribution à la plateforme Brainwaves-as-a-Service (BaaS) pour la santé et la robotique</li>
+                  </ul>
+                  <p class="skills"><b>Compétences :</b> React · TypeScript · Visualisation de Données · IA/ML</p>
+                </div>
+              </div>
+
+              <!-- Poste 2 : Kodu AI -->
+              <div class="time-item mt-3">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark"><a href="https://kodu.ai">Ingénieur Fondateur chez <b>Kodu AI</b></a></h5>
+                  <div class="font-14">Août 2024 - Jan 2025 · 6 mois · Temps plein · Tokyo, Japon</div>
+                  <ul>
+                    <li>Startup d'assistant de codage IA, construction de l'infrastructure frontend et backend autour des LLMs</li>
+                    <li>Amélioration de l'extension VSCode utilisée par 100k+ développeurs</li>
+                    <li>Introduction de systèmes de récompense ayant significativement augmenté la rétention et la croissance</li>
+                  </ul>
+                  <p class="skills"><b>Compétences :</b> Développement Produit · Backend & Frontend · APIs · Startup · Extension VSCode · LLM
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Poste 3 : Datadog -->
+              <div class="time-item mt-3">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark"><a href="https://www.datadoghq.com/">Stagiaire Ingénieur Logiciel chez
+                      <b>Datadog</b></a></h5>
+                  <div class="font-14">Mar 2024 - Sep 2024 · Stage de 6 mois</div>
+                  <ul>
+                    <li>Contribution au produit phare de tableau de bord en utilisant React et la bibliothèque UI interne</li>
+                    <li>Implémentation de nouvelles fonctionnalités et optimisation des performances pour les migrations de packages</li>
+                    <li>Participation aux revues de code garantissant des standards de qualité élevés</li>
+                  </ul>
+                  <p class="skills"><b>Compétences :</b> React · TypeScript · Redux · ReactQuery · CI/CD</p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+          <!-- Colonne 2 : Expériences restantes -->
+          <div class="col-sm-6 col-print-6">
+            <div class="timeline">
+              <!-- Poste 4 : Projets Open-Source -->
+              <div class="time-item">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark"><a href="https://github.com/ajnart">Projets Open-Source & Entrepreneuriat</a></h5>
+                  <div class="font-14">Mar 2022 - Présent</div>
+                  <ul>
+                    <li><b><a href="https://github.com/ajnart/homarr">Homarr</a> :</b> Fondation et mise à l'échelle jusqu'à 140k+ MAU (70k quotidiens)</li>
+                    <li><b><a href="https://dashboardicons.com">DashboardIcons.com</a> :</b> Création d'une bibliothèque d'icônes monétisée avec 2000+ icônes
+                    </li>
+                    <li>Maintenance open source ainsi que construction du site web et optimisation SEO - 10M+ pages vues par mois</li>
+                  </ul>
+                  <p class="skills"><b>Compétences :</b> Gestion de Produit · NextJS · Open Source · Entrepreneuriat · SEO · AdSense</p>
+                </div>
+              </div>
+<!-- Poste 5 : CreativeLift -->
+<div class="time-item mt-3">
+  <div class="item-info">
+    <h5 class="my-1 text-dark"><a href="https://www.linkedin.com/company/creative-lift/">Stagiaire Développeur React
+        chez
+        <b>CreativeLift</b></a></h5>
+    <div class="font-14">Avr 2022 - Sep 2022 · Stage de 6 mois</div>
+    <ul>
+      <li>Développement de 80+ composants React Material UI réutilisables pour le système de design</li>
+      <li>Construction et maintenance d'un Storybook pour la documentation des composants</li>
+      <li>Utilisation de NextJS, TypeScript et Gitlab dans les flux de développement</li>
+    </ul>
+    <p class="skills"><b>Compétences :</b> NextJS · MUI · TypeScript · React</p>
+  </div>
+</div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </section>
+          
+          <!-- Section Compétences Techniques -->
+          <section class="section-md" style="padding: 40px 0;">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+            <div class="resume-icon">
+              <h4 class="mt-4 mb-3"> <i class="uil uil-code"></i>Compétences Techniques</h4>
+            </div>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-print-6">
+            <div class="timeline">
+              <div class="time-item">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark">Langages</h5>
+                  <p>TypeScript, JavaScript, Python, Go, Node.js</p>
+                </div>
+              </div>
+              <div class="time-item">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark">Frontend</h5>
+                  <p>React, NextJS, TailwindCSS, Vite</p>
+                </div>
+              </div>
+              <div class="time-item">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark">Backend</h5>
+                  <p>PostgresSQL, Hono, APIs REST, Express, NestJS, Microservices, Go, BaaS</p>
+                </div>
+              </div>
+            </div>
+            </div>
+          <div class="col-sm-6 col-print-6">
+            <div class="timeline">
+              <div class="time-item">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark">Cloud & DevOps</h5>
+                  <p>AWS, Docker, CI/CD, PostgreSQL, Git, GitHub Actions, Self-Hosted</p>
+                </div>
+              </div>
+              <div class="time-item">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark">Tests & Méthodes</h5>
+                  <p>Jest, Testing Library, Agile, Revue de Code, Architecture Système</p>
+                </div>
+              </div>
+              <div class="time-item">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark">Portfolio</h5>
+                  <p>Visitez mon <a href="https://github.com/ajnart" target="_blank">GitHub</a> pour voir mes travaux et contributions à
+                    divers projets</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Apply a page break here -->
+    <!-- <div class="mt-5 mb-5" style="page-break-before:always">&nbsp;</div> -->
+    <section class="section-md" style="padding-top: 40px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-print-6">
+            <div class="resume-icon">
+              <h4 class="mt-4 mb-3"><i class="uil uil-graduation-hat"></i>Formation</h4>
+            </div>
 
-    <section class="section-md">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-print-6">
-            <div class="resume-icon">
-              <i class="uil uil-code"></i>
-              <h5 class="mt-n2">Programmation</h5>
-            </div>
             <!--end resume-icon-->
             <div class="timeline">
               <div class="time-item">
                 <div class="item-info">
-                  <h5 class="my-1 text-dark"><i class="mr-2 devicon-nextjs-plain"></i> NextJS</h5>
-                  <p>
-                    NextJS est le framework de prédilection pour le développement web, je l'utilise depuis 2021 et je
-                    suis son développement de près. J'ai un intérêt particulier pour l'approche de l'architecture
-                    logicielle et les stratégies de rendu que NextJS offre.
-                  </p>
-                </div>
-              </div>
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark"><i class="mr-2 devicon-react-plain"></i> React</h5>
-                  <p>Ayant utilisé React à la fois professionnellement et personnellement depuis 2020, mon expérience
-                    couvre une gamme de projets. Des entreprises individuelles à mon stage chez Creative Lift, j'ai
-                    continuellement perfectionné mes compétences en React.</p>
-                </div>
-              </div>
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark"><i class="mr-2 devicon-typescript-plain"></i> TypeScript</h5>
-                  <p>Depuis 2021, TypeScript est devenu une partie intégrante de mon flux de travail quotidien,
-                    notamment dans le développement de mon projet personnel, Homarr. Au fil du temps, mon utilisation
-                    de TypeScript a évolué, incorporant des fonctionnalités et des méthodologies plus récentes et
-                    avancées.</p>
-                </div>
-              </div>
-              <!--end time-item-->
-              <div class="time-item mt-3">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark"><i class="mr-2 devicon-docker-plain"></i>Docker</h5>
-                  <p>En ce qui concerne le déploiement de projets, je m'assure toujours d'inclure un Dockerfile pour
-                    garantir une intégration en douceur pour de nouveaux contributeurs potentiels.</p>
-                </div>
-              </div>
-              <div class="time-item mt-3">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark"><i class="mr-2 devicon-python-plain"></i>Python</h5>
-                  <p>Pendant mes six mois en tant qu'ingénieur backend chez LumiTHD, j'ai exploré les subtilités du
-                    développement Python et des optimisations d'algorithmes.</p>
-                </div>
-              </div>
-              <div class="time-item mt-3 no-print">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark"><i class="mr-2 devicon-rust-plain"></i>Rust</h5>
-                  <p>
-                    Rust est un langage qui m'intéresse depuis longtemps, et je l'utilise pour un projet personnel en
-                    cours qui vise à être un analyseur graphique de l'utilisation du disque multiplateforme avec une
-                    interface utilisateur moderne.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-print-6">
-            <div class="resume-icon">
-              <i class="uil uil-suitcase-alt"></i>
-              <h5 class="mt-n2 mb-0">Expériences professionnelles</h5>
-            </div>
-            <!--end resume-icon-->
-            <div class="timeline">
-              <div class="time-item">
-                <div class="item-info">
-                  <div class="font-14">Juillet - Décembre 2020</div>
-                  <h5 class="my-1 text-dark"><a href="http://www.lumithd.fr/">Développeur Back-End</a>
-                  </h5>
-                  <p>Profilage, dockerisation et développement en Python sous forme de monorepo,
-                    avec des sous-modules utilisant PostgreSQL et Flask. Introduction à la méthodologie de travail
-                    Agile, tests unitaires et tests de régression.</p>
-                  <p class="font-14 no-print">
-                    <em><b>Compétences :</b> Python · Docker · PostgreSQL · Flask · Git · Agile · Tests unitaires ·
-                      Tests de régression</em>
-                  </p>
-                </div>
-              </div>
-              <div class="time-item mt-3">
-                <div class="item-info">
-                  <div class="font-14">Octobre 2021 - Mars 2022 · 6 mois</div>
-                  <h5 class="my-1 text-dark"><a href="https://www.linkedin.com/company/mangrove-ai/">Architecte Cloud
-                      Junior AWS chez <b>MangroveAI</b></a></h5>
-                  <p class="font-14">Développement d'un service de cave à vin connecté utilisant une interface
-                    React et une infrastructure sans serveur AWS avec CloudFormation. Formation sur le cloud AWS avec la
-                    formation "SAA-C02" sur A Cloud Guru. Travail sur un projet de Data Science pour une compagnie de
-                    croisière de luxe.</p>
-                  <p class="no-print"><em><b>Compétences :</b> AWS · React.js · CloudFormation · Sans serveur · CI/CD ·
-                      DevOps</em></p>
-                </div>
-              </div>
-              <div class="time-item mt-3">
-                <div class="item-info">
-                  <div class="font-14">Mars 2022 - Actuel</div>
-                  <h5 class="my-1 text-dark"><a href="https://github.com/ajnart/homarr">Application Open Source
-                      avec 3M+ installations - <b>Homarr</b></a></h5>
-                  <p>Développement à partir de zéro d'un projet personnel, atteignant actuellement une moyenne de
-                    50k utilisateurs quotidiens. Gestion d'une équipe de 6 contributeurs actifs, réponse aux problèmes
-                    et aux PR sur GitHub.</p>
-                  </p>
-                  <p class="font-14 no-print">
-                    <em><b>Compétences :</b> NextJS · TypeScript · Docker · GitHub · React.js · Rust · Gestion d'une
-                      équipe · CI/CD · DevOps · DX · Tests · Architecture logicielle</em>
-                  </p>
-                </div>
-              </div>
-              <div class="time-item mt-3">
-                <div class="item-info">
-                  <div class="font-14">Avril 2022 - Septembre 2022 · 6 mois</div>
-                  <h5 class="my-1 text-dark"><a href="https://www.linkedin.com/company/creative-lift/">Développeur React
-                      - <b>CreativeLift</b></a></h5>
-                  <p>Développement de la partie frontend de la solution Saas
-                    Intégration et développement de composants React Material UI
-                    Télétravail depuis Bordeaux, déplacements à Paris pour des événements spéciaux</p>
-                  <p class="font-14 no-print"><em><b>Compétences :</b> NextJS · Storybook · MUI · Gitlab · TypeScript ·
-                      React</em></p>
-                </div>
-              </div>
-              <!--end time-item-->
-            </div>
-            <!--end timeline-->
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-md">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-print-6">
-            <div class="resume-icon">
-              <i class="uil uil-graduation-hat"></i>
-              <h5 class="mt-n2">Éducation</h5>
-            </div>
-            <!--end resume-icon-->
-            <div class="timeline">
-              <div class="time-item">
-                <div class="item-info">
-                  <div class="font-14">2019</div>
-                  <h5 class="my-1 text-dark">Baccalauréat général Scientifique</h5>
-                  <p>Section scientifique du baccalauréat avec spécialisation en mathématiques et certains cours
-                    enseignés en anglais dans le cadre du programme "euro".</p>
-                </div>
-              </div>
-              <!--end time-item-->
-              <div class="time-item mt-3">
-                <div class="item-info">
-                  <div class="font-14">2019 - Présent</div>
-                  <h5 class="my-1 text-dark">Epitech</h5>
+                  <h5 class="my-1 text-dark">Epitech - Master en Informatique</h5>
+                  <div class="font-14">Sep 2019 - Sep 2024</div>
                   <p>Epitech est une école d'informatique axée sur l'apprentissage de la programmation avec une
-                    approche d'apprentissage pratique basée sur des projets. Elle est bien connue pour sa période
+                    approche pratique basée sur des projets. Elle est bien connue pour sa période
                     intensive de formation appelée "piscine".</p>
                 </div>
               </div>
-              <div class="time-item mt-3">
+
+              <div class="time-item  mt-1">
                 <div class="item-info">
-                  <div class="font-14">2022 - 2023</div>
                   <h5 class="my-1 text-dark">Institut de technologie de Shibaura</h5>
+                  <div class="font-14">Sep 2022 - Sep 2023</div>
                   <p>Année d'échange étudiant réalisée à Tokyo, au Japon. SIT est la seule université privée de
                     science et de technologie sélectionnée dans le cadre du projet exclusif du gouvernement japonais
                     "Top Global University Project".</p>
                 </div>
               </div>
+
+
+              <!--end time-item-->
+
+              <div class="time-item">
+                <div class="item-info">
+                  <h5 class="my-1 text-dark">Baccalauréat Scientifique</h5>
+                  <div class="font-14">2019</div>
+                  <p>Section scientifique du plus grand examen national français avec spécialisation en mathématiques et
+                    certains cours enseignés en anglais dans le cadre du programme "euro", développant la pensée critique
+                    et scientifique en anglais</p>
+                </div>
+              </div>
+              <!--end time-item-->
             </div>
           </div>
           <div class="col-sm-6 col-print-6">
             <div class="resume-icon">
-              <i class="uil uil-comment-heart"></i>
-              <h5 class="mt-n2">Compétences et centres d'intérêt</h5>
+              <h4 class="mt-2"><i class="uil uil-comment-heart"></i>Compétences et centres d'intérêt</h4>
             </div>
             <!--end resume-icon-->
             <div class="timeline">
@@ -299,21 +343,9 @@
                 <div class="item-info">
                   <h5 class="my-1 text-dark">Programmation</h5>
                   <p>
-                    La programmation est également un passe-temps pour moi, j'aime apprendre de nouveaux langages et
-                    frameworks, contribuer activement à des projets open source et créer les miens.
+                    La programmation est aussi un hobby pour moi, j'aime apprendre de nouveaux langages et frameworks,
+                    contribuer activement à des projets open source et créer les miens.
                   </p>
-                </div>
-              </div>
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Méthodologie</h5>
-                  <ul>
-                    <li>Expérience en développement piloté par les tests</li>
-                    <li>Organisé, méticuleux et autonome en télétravail</li>
-                    <li>Habitué à travailler dans un environnement Agile</li>
-                    <li>Expérience en gestion d'équipe et leadership à travers mon projet personnel Homarr, gestion
-                      d'une équipe de 6 contributeurs actifs et de plus de 120 traducteurs</li>
-                  </ul>
                 </div>
               </div>
               <div class="time-item">
@@ -322,7 +354,7 @@
                   <p>
                     - Français : Langue maternelle<br />
                     - Anglais : Niveau bilingue<br />
-                    - Japonais : Environ 100 heures de cours pendant mon année d'échange à Tokyo, environ niveau JLPT N5
+                    - Japonais : Niveau JLPT N5
                   </p>
                 </div>
               </div>
@@ -336,7 +368,8 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <p class="copyright mb-0 py-4">2023 - Thomas "ajnart" Camlong</p>
+            <p class="copyright mb-0 py-4 last-updated">Mis à jour Octobre 2025 - Thomas "ajnart" Camlong
+            <p>
           </div>
         </div>
       </div>
@@ -354,9 +387,6 @@
   <script src="plugins/filter/isotope.pkgd.min.js"></script>
   <script src="plugins/filter/masonry.pkgd.min.js"></script>
   <script src="plugins/filter/jquery.magnific-popup.min.js"></script>
-
-  <!-- App js -->
-  <script src="js/app.js"></script>
 </body>
 
 </html>
