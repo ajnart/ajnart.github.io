@@ -1,397 +1,546 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CV Thomas Camlong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="Thomas Camlong - Software Engineer" name="description" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>CV Thomas Camlong</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta content="Thomas Camlong - Software Engineer" name="description" />
-  
-  <!-- OpenGraph / Share metadata -->
-  <meta property="og:title" content="Thomas Camlong - Software Engineer" />
-  <meta property="og:description"
-    content="Software Engineer passionate about open source. Check out my portfolio and get in touch." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ajnart.github.io/" />
-  <meta property="og:image" content="https://ajnart.github.io/images/main.jpg" />
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Thomas Camlong - Software Engineer" />
-  <meta name="twitter:description"
-    content="Software Engineer passionate about open source. Check out my portfolio and get in touch." />
-  <meta name="twitter:image" content="https://ajnart.github.io/images/main.jpg" />
+    <!-- OpenGraph / Share metadata -->
+    <meta property="og:title" content="Thomas Camlong - Software Engineer" />
+    <meta
+      property="og:description"
+      content="FullStack Software Engineer passionate about open source. Check out my portfolio and get in touch."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ajnart.github.io/" />
+    <meta property="og:image" content="https://ajnart.github.io/images/main.jpg" />
 
-  <!-- App favicon -->
-  <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Thomas Camlong - Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="FullStack Software Engineer passionate about open source. Check out my portfolio and get in touch."
+    />
+    <meta name="twitter:image" content="https://ajnart.github.io/images/main.jpg" />
 
-  <link href="plugins/filter/magnific-popup.css" rel="stylesheet" type="text/css" />
-  <link href="plugins/animated/headline.css" rel="stylesheet" type="text/css" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
 
-  <!-- App css -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="css/icons.css" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-<!-- Cal.com booking script -->
-<script type="text/javascript">
-  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-  Cal("init", "30min", { origin: "https://app.cal.com" });
-  Cal.ns["30min"]("ui", { "hideEventTypeDetails": false, "layout": "month_view" });
-</script>
+    <link href="plugins/filter/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/animated/headline.css" rel="stylesheet" type="text/css" />
 
-<style>
-  @media print {
-    a {
-      text-decoration: none !important;
-      color: inherit !important;
-    }
+    <!-- App css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Cal.com booking script -->
+    <script type="text/javascript">
+      (function (C, A, L) {
+        let p = function (a, ar) {
+          a.q.push(ar);
+        };
+        let d = C.document;
+        C.Cal =
+          C.Cal ||
+          function () {
+            let cal = C.Cal;
+            let ar = arguments;
+            if (!cal.loaded) {
+              cal.ns = {};
+              cal.q = cal.q || [];
+              d.head.appendChild(d.createElement("script")).src = A;
+              cal.loaded = true;
+            }
+            if (ar[0] === L) {
+              const api = function () {
+                p(api, arguments);
+              };
+              const namespace = ar[1];
+              api.q = api.q || [];
+              if (typeof namespace === "string") {
+                cal.ns[namespace] = cal.ns[namespace] || api;
+                p(cal.ns[namespace], ar);
+                p(cal, ["initNamespace", namespace]);
+              } else p(cal, ar);
+              return;
+            }
+            p(cal, ar);
+          };
+      })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", "30min", { origin: "https://app.cal.com" });
+      Cal.ns["30min"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    </script>
 
-    a:hover {
-      text-decoration: none !important;
-    }
-  }
-</style>
-</head>
+    <style>
+      @media print {
+        a {
+          text-decoration: none !important;
+          color: inherit !important;
+        }
 
-<body>
-  <!--end nav-->
-  <div class="main-wraper mt-0">
-    <section class="section-main bg-profile clip-profile" id="header">
-      <div class="zoo-profile">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-print-6 align-self-center mb-3 mb-lg-0">
-              <div class="zoo-profile-main">
-                <div class="zoo-profile-main-pic">
-                  <img src="images/main.jpg" alt="" class="rounded-circle mt-0 content-image"
-                    style="max-width: 100px; max-height: 100px;" />
-                </div>
-                <!--end zoo-profile-main-pic-->
-                <div class="zoo-profile_user-detail">
-                  <h5 class="zoo-user-name">Thomas Camlong</h5>
-                  <div class="row">
-                    <button type="button" class="text-white btn btn-sm btn-soft-primary mr-2">
-                      <a target="_blank" class="text-white" href="https://github.com/ajnart">GitHub: ajnart </a><i
-                        class="uil-github"></i>
-                    </button>
-                    <button type="button" class="text-white btn btn-sm btn-soft-primary mr-2">
-                      <a target="_blank" class="text-white" href="https://linkedin.com/in/thomas-camlong">LinkedIn:
-                        thomas-camlong
-                      </a><i class="uil-linkedin"></i>
-                    </button>
-                    <button type="button" class="text-white btn btn-sm btn-soft-primary no-print" data-cal-link="ajnart/30min"
-                      data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}'>
-                      <span class="text-white">Let's talk</span><i class="uil-calendar-alt"></i>
-                    </button>
+        a:hover {
+          text-decoration: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--end nav-->
+    <div class="main-wraper mt-0">
+      <section class="section-main bg-profile clip-profile" id="header">
+        <div class="zoo-profile">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-print-6 align-self-center mb-3 mb-lg-0">
+                <div class="zoo-profile-main">
+                  <div class="zoo-profile-main-pic">
+                    <img
+                      src="images/main.jpg"
+                      alt=""
+                      class="rounded-circle mt-0 content-image"
+                      style="max-width: 100px; max-height: 100px"
+                    />
                   </div>
+                  <!--end zoo-profile-main-pic-->
+                  <div class="zoo-profile_user-detail">
+                    <h5 class="zoo-user-name">Thomas Camlong</h5>
+                    <div class="row">
+                      <button type="button" class="text-white btn btn-sm btn-soft-primary mr-2">
+                        <a target="_blank" class="text-white" href="https://github.com/ajnart"
+                          >GitHub: ajnart </a
+                        ><i class="uil-github"></i>
+                      </button>
+                      <button type="button" class="text-white btn btn-sm btn-soft-primary mr-2">
+                        <a
+                          target="_blank"
+                          class="text-white"
+                          href="https://linkedin.com/in/thomas-camlong"
+                          >LinkedIn: thomas-camlong </a
+                        ><i class="uil-linkedin"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="text-white btn btn-sm btn-soft-primary no-print"
+                        data-cal-link="ajnart/30min"
+                        data-cal-namespace="30min"
+                        data-cal-config='{"layout":"month_view"}'
+                      >
+                        <span class="text-white">Let's talk</span><i class="uil-calendar-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!--end zoo-profile_user-detail-->
                 </div>
-                <!--end zoo-profile_user-detail-->
-
+                <!--end profile-main-pic-->
               </div>
-              <!--end profile-main-pic-->
-            </div>
-            <div class="col-sm-4 col-print-4 ml-auto">
-              <ul class="list-unstyled personal-detail print">
-                <li>
-                  <i class="'uil uil-phone-volume mr-2"></i><a class="text-white" href="tel:+33677259540"> <b>
-                      Phone:</b>
-                    +33 6 77 25 95 40</a>
-                </li>
-                <li>
-                  <i class="uil uil-envelope mt-2 mr-2"></i><a class="text-white"
-                    href="mailto:thomascamlong@gmail.com"><b>Mail:</b> thomascamlong@gmail.com</a>
-                </li>
-                <li>
-                  <i class="uil uil-map-marker-alt mt-2 mr-2"></i><a class="text-white"><b>Location:</b> Paris,
-                    France</a>
-                </li>
-              </ul>
-            </div>
-            <div class="container mb-5">
-              <div class="row">
-                <div class="container mb-3 mt-3 text-white text-intro">
-                  Full-stack engineer with expertise in React, TypeScript, and modern web technologies.
-                  Built products from idea to production, including open-source projects.
-                  Seeking exciting opportunities and work on challenging and impactful projects
+              <div class="col-sm-4 col-print-4 ml-auto">
+                <ul class="list-unstyled personal-detail print">
+                  <li>
+                    <i class="'uil uil-phone-volume mr-2"></i
+                    ><a class="text-white" href="tel:+33677259540"> Phone: +33 6 77 25 95 40</a>
+                  </li>
+                  <li>
+                    <i class="uil uil-envelope mt-2 mr-2"></i
+                    ><a class="text-white" href="mailto:thomascamlong@gmail.com"
+                      >Mail: thomascamlong@gmail.com</a
+                    >
+                  </li>
+                  <li>
+                    <i class="uil uil-map-marker-alt mt-2 mr-2"></i
+                    ><a class="text-white">Location: Paris, France</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="container mb-5">
+                <div class="row">
+                  <div class="container mb-3 mt-3 text-white text-intro">
+                    Founding-minded software engineer building AI products, developer tooling, and
+                    open-source software from zero to production. I enjoy owning products
+                    end-to-end, solving hard engineering problems, and working closely with users to
+                    build intuitive experiences that solve real problems. I use modern AI tooling to
+                    accelerate development while relying on strong engineering fundamentals to build
+                    reliable, maintainable systems.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--end zoo-profile-->
-    </section>
-    <section class="section-md">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-print-12">
-            <div class="resume-icon">
-              <h4 class="mt-4 mb-0"> <i class="uil uil-suitcase-alt"></i>Professional Experiences</h4>
+        <!--end zoo-profile-->
+      </section>
+      <section class="section-md">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-print-12">
+              <div class="resume-icon">
+                <h4 class="mt-4 mb-0">
+                  <i class="uil uil-suitcase-alt"></i>Professional Experiences
+                </h4>
+              </div>
+              <!--end resume-icon-->
             </div>
-            <!--end resume-icon-->
-          </div>
           </div>
           <div class="row">
             <!-- Column 1: First 3 experiences (top to bottom) -->
             <div class="col-sm-6 col-print-6">
-            <div class="timeline">
-              <!-- Position 1: Habs AI (Most Recent) -->
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark"><a href="https://habs.ai">Full-Stack Software Engineer at <b>Habs AI</b></a></h5>
-                  <div class="font-14">Jan 2025 - Present · Full-time · Paris, France</div>
-                  <ul>
-                    <li>Built web platform for Neuroscience & Machine Learning company</li>
-                    <li>Developed EEG data visualization tools and metrics extraction</li>
-                    <li>Contributed to Brainwaves-as-a-Service (BaaS) platform delivering AI-enhanced metrics</li>
-                    <li>Integrated with Azure OpenAI and agentic framework</li>
-                  </ul>
-                  <p class="skills"><b>Skills:</b> React · TypeScript · Node · Data Visualization · Agentic Framework</p>
-                </div>
-              </div>
+              <div class="timeline">
+                <!-- Position 1: Habs AI (Most Recent) -->
+                <div class="time-item">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark">
+                      <a href="https://habs.ai">Full-Stack Software Engineer at Habs AI</a>
+                    </h5>
+                    <div class="font-14">Jan 2025 - Present · Full-time · Paris, France</div>
+                    <ul>
+                      <li>
+                        Led development of the company's AI platform powering enterprise
+                        neuroscience studies, integrating proprietary brain signal models with
+                        frontier LLMs to generate structured insights.
+                      </li>
 
-              <!-- Position 2: Kodu AI -->
-              <div class="time-item mt-3">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark"><a href="https://www.azad.bot/">Fullstack Founding Engineer at <b>Kodu AI</b></a></h5>
-                  <div class="font-14">Aug 2024 - Jan 2025 · 6 months · Freelance · Tokyo, Japan</div>
-                  <ul>
-                    <li>AI coding assistant startup, built frontend and backend infrastructure that wrap LLMs</li>
-                    <li>Enhanced the VSCode extension that is used by 100k+ developers</li>
-                    <li>Introduced reward systems that significantly increased user retention and growth</li>
-                  </ul>
-                  <p class="skills"><b>Skills:</b> Product Development · Backend & Frontend · APIs · Startup · VSCode Extension · LLM
-                  </p>
+                      <li>
+                        Built a centralized operations platform managing participant bookings,
+                        laboratory workflows, questionnaires, and study execution, reducing operator
+                        workload by 70%.
+                      </li>
+                      <li>
+                        Designed a highly configurable participant screening platform with
+                        behavioral analytics, reducing study setup time by 50% while giving
+                        customers real-time visibility into participant journeys.
+                      </li>
+                      <li>
+                        Built internal evaluation tooling, reducing feature validation cycles from
+                        hours to minutes and enabling significantly faster experimentation and
+                        rea-world model evaluation.
+                      </li>
+                      <li>
+                        Architected and deployed production AI infrastructure on Azure Marketplace
+                        using MCP, agents, and modern LLM tooling to orchestrate proprietary ML
+                        models and frontier language models for the main insights product.
+                      </li>
+                      <li>
+                        Represented the company at VivaTech 2025 and 2026, showcasing the product to
+                        thousand of attendees and partnering with Microsoft
+                      </li>
+                    </ul>
+                    <p class="skills">
+                      Skills: React · TypeScript · LLMOps · Dataviz · Agentic Framework · Context
+                      Engineering
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Position 2: Kodu AI -->
+                <div class="time-item mt-3">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark">
+                      <a href="https://www.azad.bot/">Founding Engineer at Kodu AI</a>
+                    </h5>
+
+                    <div class="font-14">
+                      Aug 2024 - Jan 2025 · 6 months · Freelance · Tokyo, Japan
+                    </div>
+
+                    <ul>
+                      <li>
+                        Joined as the first engineering hire, architecting the full-stack platform
+                        powering an AI coding assistant serving 10k+ active users and 5k+ paying
+                        customers.
+                      </li>
+
+                      <li>
+                        Developed core features for the VS Code extension, helping grow the
+                        open-source project to 5.3k+ GitHub stars while shipping product updates on
+                        a daily release cadence.
+                      </li>
+
+                      <li>
+                        Built LLM infrastructure and agent workflows integrating frontier models,
+                        enabling rapid experimentation driven by continuous customer feedback and
+                        community engagement.
+                      </li>
+
+                      <li>
+                        Designed product engagement systems that improved user retention and
+                        contributed to Kodu becoming one of the top 5 applications on OpenRouter.
+                      </li>
+                    </ul>
+
+                    <p class="skills">
+                      Skills: TypeScript · React · LLM Infrastructure · AI Agents · Product
+                      Engineering · VS Code Extension
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Position 3: Datadog -->
+                <div class="time-item mt-3">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark">
+                      <a href="https://www.datadoghq.com/">
+                        Software Engineering Intern at Datadog
+                      </a>
+                    </h5>
+                    <div class="font-14">Mar 2024 - Sep 2024 · 6 months internship</div>
+                    <ul>
+                      <li>
+                        Developed features for Datadog Dashboards using React, TypeScript, and the
+                        company's internal design system.
+                      </li>
+                      <li>
+                        Implemented a redesign of the dashboard sharing experience, aligning
+                        interactions with familiar collaboration patterns used by tools such as
+                        Google Drive, significantly increasing feature adoption.
+                      </li>
+                      <li>
+                        Participated in design discussions, code reviews, and large-scale frontend
+                        migrations across a production codebase.
+                      </li>
+                    </ul>
+                    <p class="skills">Skills: React · TypeScript · Redux · React Query · CI/CD</p>
+                  </div>
                 </div>
               </div>
-              
-              <!-- Position 3: Datadog -->
-              <div class="time-item mt-3">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark"><a href="https://www.datadoghq.com/">Software Engineering Intern at
-                      <b>Datadog</b></a></h5>
-                  <div class="font-14">Mar 2024 - Sep 2024 · 6 months internship</div>
-                  <ul>
-                    <li>Contributed to flagship dashboard product using React and internal UI library</li>
-                    <li>Implemented new features and optimized performance for package migrations</li>
-                    <li>Participated in code reviews ensuring high code quality standards</li>
-                  </ul>
-                  <p class="skills"><b>Skills:</b> React · TypeScript · Redux · ReactQuery · CI/CD</p>
-                </div>
-              </div>
-            </div>
             </div>
 
-          <!-- Column 2: Remaining experiences (top to bottom) -->
-          <div class="col-sm-6 col-print-6">
-            <div class="timeline">
-              <!-- Position 4: Open-Source Projects -->
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark"><a href="https://github.com/ajnart">Open-Source Projects & Entrepreneurship</a></h5>
-                  <div class="font-14">Mar 2022 - Present</div>
-                  <ul>
-                    <li><b><a href="https://github.com/ajnart/homarr">Homarr</a>:</b> Founded and scaled to 140k+ MAU (70k daily)</li>
-                    <li><b><a href="https://dashboardicons.com">DashboardIcons.com</a>:</b> Created monetized icon
-                      library with 2000+ icons
-                    </li>
-                    <li>Open source maintaining work as well as building the website and optimizing for SEO - 10M+ page views per month</li>
-                  </ul>
-                  <p class="skills"><b>Skills:</b> Product Management · NextJS · Open Source · Entrepreneurship · SEO · AdSense</p>
+            <!-- Column 2: Remaining experiences (top to bottom) -->
+            <div class="col-sm-6 col-print-6">
+              <div class="timeline">
+                <!-- Position 4: Open-Source Projects -->
+                <!-- Homarr -->
+                <div class="time-item">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark">
+                      <a href="https://github.com/ajnart/homarr">
+                        Founder & Lead Maintainer - Homarr
+                      </a>
+                    </h5>
+                    <div class="font-14">Mar 2022 - Present</div>
+                    <ul>
+                      <li>
+                        Founded and architected an open-source self-hosted dashboard with 10k+
+                        GitHub stars, 50M+ Docker pulls, and 74 contributors.
+                      </li>
+                      <li>
+                        Built and grew an international open-source community of 6k+ Discord
+                        members, coordinating contributions from 234 translators across 29
+                        languages.
+                      </li>
+                      <li>
+                        Led product direction, architecture, release management, and developer
+                        experience while building AI-assisted contributor tooling for faster
+                        community development.
+                      </li>
+                      <li>
+                        Designed and implemented an MCP server enabling AI agents to manage Homarr
+                        instances through natural language.
+                      </li>
+                    </ul>
+                    <p class="skills">
+                      Skills: TypeScript · React · Open Source · Product Architecture · Developer
+                      Experience · MCP
+                    </p>
+                  </div>
+                </div>
+
+                <!-- DashboardIcons -->
+                <div class="time-item mt-3">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark">
+                      <a href="https://dashboardicons.com"> Founder - DashboardIcons.com </a>
+                    </h5>
+                    <div class="font-14">2025 - Present</div>
+                    <ul>
+                      <li>
+                        Built and monetized an icon library containing 3,000+ high-quality dashboard
+                        icons.
+                      </li>
+                      <li>
+                        Grew organic search traffic by an average of 30% month-over-month, reaching
+                        2.5M+ monthly search impressions.
+                      </li>
+                      <li>
+                        Built the platform from scratch and drove SEO strategy, resulting in 10M+
+                        monthly page views.
+                      </li>
+                    </ul>
+                    <p class="skills">
+                      Skills: SEO · TypeScript · Next.js · Product Engineering · Entrepreneurship
+                    </p>
+                  </div>
+                </div>
+                <!-- Position 5: CreativeLift -->
+                <div class="time-item mt-3">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark">
+                      <a href="https://www.linkedin.com/company/creative-lift/">
+                        React Developer Intern at CreativeLift
+                      </a>
+                    </h5>
+                    <div class="font-14">Apr 2022 - Sep 2022 · 6 months internship</div>
+                    <ul>
+                      <li>
+                        Built 80+ reusable React and Material UI components powering the company's
+                        design system.
+                      </li>
+                      <li>
+                        Introduced Storybook for component documentation, improving developer
+                        experience and accelerating UI development.
+                      </li>
+                      <li>
+                        Collaborated closely with designers to deliver consistent interfaces using
+                        React, Next.js, and TypeScript across client projects.
+                      </li>
+                    </ul>
+                    <p class="skills">
+                      Skills: React · Next.js · TypeScript · Material UI · Storybook
+                    </p>
+                  </div>
                 </div>
               </div>
-<!-- Position 5: CreativeLift -->
-<div class="time-item mt-3">
-  <div class="item-info">
-    <h5 class="my-1 text-dark"><a href="https://www.linkedin.com/company/creative-lift/">React Developer
-        Intern at
-        <b>CreativeLift</b></a></h5>
-    <div class="font-14">Apr 2022 - Sep 2022 · 6 months internship</div>
-    <ul>
-      <li>Developed 80+ reusable React Material UI components for design system</li>
-      <li>Built and maintained Storybook for component documentation</li>
-      <li>Utilized NextJS, TypeScript, and Gitlab in development workflows</li>
-    </ul>
-    <p class="skills"><b>Skills:</b> NextJS · MUI · TypeScript · React</p>
-  </div>
-</div>
             </div>
           </div>
-          </div>
-          </div>
-          </section>
-          
-          <!-- Technical Skills Section -->
-          <section class="section-md" style="padding: 40px 0;">
-            <div class="container">
-              <div class="row">
-                <div class="col-12">
-            <div class="resume-icon">
-              <h4 class="mt-4 mb-3"> <i class="uil uil-code"></i>Technical Skills</h4>
+        </div>
+      </section>
+
+      <!-- Technical Skills Section -->
+      <section class="section-md" style="padding: 40px 0">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="resume-icon">
+                <h4 class="mt-4 mb-3"><i class="uil uil-code"></i>Technical Skills</h4>
+              </div>
             </div>
-          </div>
           </div>
           <div class="row">
             <div class="col-sm-6 col-print-6">
-            <div class="timeline">
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Languages</h5>
-                  <p>Languages: TypeScript, JavaScript, Python, Go, Node.js</p>
+              <div class="timeline">
+                <div class="time-item">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark">Programming Languages</h5>
+                    <p>Primarily: TypeScript, JavaScript, Python, Go, Node.js</p>
+                  </div>
                 </div>
-              </div>
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Frontend</h5>
-                  <p>React, NextJS, TailwindCSS, Vite</p>
+                <div class="time-item">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark">Frontend</h5>
+                    <p>React, NextJS, TailwindCSS, Vite</p>
+                  </div>
                 </div>
-              </div>
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Backend</h5>
-                  <p>PostgresSQL, Hono, REST APIs, Express, NestJS, Microservices, Go, BaaS</p>
+                <div class="time-item">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark">Backend</h5>
+                    <p>
+                      PostgreSQL · Redis · Hono · NestJS · Docker · Kubernetes · RabbitMQ ·
+                      Cloudflare · REST APIs · Go
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            </div>
-          <div class="col-sm-6 col-print-6">
-            <div class="timeline">
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Cloud & DevOps</h5>
-                  <p>AWS, Docker, CI/CD, PostgreSQL, Git, GitHub Actions, Self-Hosted</p>
-                </div>
-              </div>
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Testing & Methods</h5>
-                  <p>Jest, Testing Library, Agile, Code Review, System Architecture</p>
-                </div>
-              </div>
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Portfolio</h5>
-                  <p>Visit my <a href="https://github.com/ajnart" target="_blank">GitHub</a> to see proof of work and contributions to
-                    various projects</p>
+            <div class="col-sm-6 col-print-6">
+              <div class="timeline">
+                <div class="time-item">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark">AI & Machine Learning</h5>
+                    <p>
+                      TanStack Agents SDK · Vercel AI SDK · Mastra · MCP · Azure AI Foundry ·
+                      Hugging Face · vLLM · RAG
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Apply a page break here -->
-    <!-- <div class="mt-5 mb-5" style="page-break-before:always">&nbsp;</div> -->
-    <section class="section-md" style="padding-top: 40px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-print-6">
-            <div class="resume-icon">
-              <h4 class="mt-4 mb-3"><i class="uil uil-graduation-hat"></i>Education</h4>
-            </div>
-
-            <!--end resume-icon-->
-            <div class="timeline">
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Epitech - Master's Degree in Computer Science</h5>
-                  <div class="font-14">Sep 2019 - Sep 2024</div>
-                  <p>Epitech is an IT school focused on learning programming with a hands-on
-                    project-based learning approach. It is well known for it's hard
-                    "piscine" intensive training period.</p>
-                </div>
+      </section>
+      <!-- Apply a page break here -->
+      <!-- <div class="mt-5 mb-5" style="page-break-before:always">&nbsp;</div> -->
+      <section class="section-md" style="padding-top: 40px">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-print-6">
+              <div class="resume-icon">
+                <h4 class="mt-4 mb-3"><i class="uil uil-graduation-hat"></i>Education</h4>
               </div>
 
-              <div class="time-item  mt-1">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Shibaura Institute of technology</h5>
-                  <div class="font-14">Sep 2022 - Sep 2023</div>
-                  <p>Student exchange year realized in Tokyo, Japan. SIT is the only private
-                    university of science and technology selected for the Japanese
-                    government's exclusive Top Global University Project. </p>
+              <!--end resume-icon-->
+              <div class="timeline">
+                <div class="time-item">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark">Epitech - Master's Degree in Computer Science</h5>
+                    <div class="font-14">Sep 2019 - Sep 2024</div>
+                    <p>
+                      Epitech is an IT school focused on learning programming with a hands-on
+                      project-based learning approach. It is well known for it's hard "piscine"
+                      intensive training period.
+                    </p>
+                  </div>
                 </div>
-              </div>
 
+                <div class="time-item mt-1">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark">Shibaura Institute of technology</h5>
+                    <div class="font-14">Sep 2022 - Sep 2023</div>
+                    <p>
+                      Student exchange year realized in Tokyo, Japan. SIT is the only private
+                      university of science and technology selected for the Japanese government's
+                      exclusive Top Global University Project.
+                    </p>
+                  </div>
+                </div>
 
-              <!--end time-item-->
+                <!--end time-item-->
 
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Baccalaureat Scientifique</h5>
-                  <div class="font-14">2019</div>
-                  <p>Science oriended section of France's biggest national exam with a major in mathematics and some
-                    courses
-                    held in english as part of the "euro" program, which has taught me critical and scienfitic thinking
-                    in english </p>
+                <div class="time-item">
+                  <div class="item-info">
+                    <h5 class="my-1 text-dark">Baccalaureat Scientifique</h5>
+                    <div class="font-14">2019</div>
+                    <p>
+                      Science oriended section of France's biggest national exam with a major in
+                      mathematics and some courses held in english as part of the "euro" program,
+                      which has taught me critical and scienfitic thinking in english
+                    </p>
+                  </div>
                 </div>
+                <!--end time-item-->
               </div>
-              <!--end time-item-->
-            </div>
-          </div>
-          <div class="col-sm-6 col-print-6">
-            <div class="resume-icon">
-              <h4 class="mt-2"><i class="uil uil-comment-heart"></i>Soft skills and Interests</h4>
-            </div>
-            <!--end resume-icon-->
-            <div class="timeline">
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Photography</h5>
-                  <p>
-                    Street photography and portraits<br />
-                    Portrait and street photography since 2017 with my Fuji camera.
-                  </p>
-                </div>
-              </div>
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Programing</h5>
-                  <p>
-                    Programming is also a hobby for me, I enjoy learning new languages and frameworks, actively
-                    contributing to open source projects and creating my own.
-                  </p>
-                </div>
-              </div>
-              <div class="time-item">
-                <div class="item-info">
-                  <h5 class="my-1 text-dark">Languages</h5>
-                  <p>
-                    - French: Native language<br />
-                    - English: Bilingual level<br />
-                    - Japanese: JLPT N5 level
-                  </p>
-                </div>
-              </div>
-              <!--end time-item-->
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <footer class="footer-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <p class="copyright mb-0 py-4 last-updated">Updated October 2025 - Thomas "ajnart" Camlong
-            <p>
+      </section>
+      <footer class="footer-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <p class="copyright mb-0 py-4 last-updated">
+                Updated July 2026 - Thomas "ajnart" Camlong
+              </p>
+              <p></p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <!--end footer-area-->
-  </div>
-  <!--end main-wraper-->
+      </footer>
+      <!--end footer-area-->
+    </div>
+    <!--end main-wraper-->
 
-  <!-- jQuery  -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="plugins/animated/headline.js"></script>
-  <script src="plugins/counter/jquery.counterup.min.js"></script>
-  <script src="plugins/counter/waypoints.min.js"></script>
-  <script src="plugins/filter/isotope.pkgd.min.js"></script>
-  <script src="plugins/filter/masonry.pkgd.min.js"></script>
-  <script src="plugins/filter/jquery.magnific-popup.min.js"></script>
-</body>
-
+    <!-- jQuery  -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/animated/headline.js"></script>
+    <script src="plugins/counter/jquery.counterup.min.js"></script>
+    <script src="plugins/counter/waypoints.min.js"></script>
+    <script src="plugins/filter/isotope.pkgd.min.js"></script>
+    <script src="plugins/filter/masonry.pkgd.min.js"></script>
+    <script src="plugins/filter/jquery.magnific-popup.min.js"></script>
+  </body>
 </html>
