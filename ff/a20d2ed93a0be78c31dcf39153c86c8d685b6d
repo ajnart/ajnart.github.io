@@ -1,0 +1,25 @@
+index.html
+  s_10d3da206143ac::t_76b3825214dbac 217
+  s_10d3da206143ac::t_3746b2253f2386 222
+  s_10d3da206143ac::t_6240aed82e387b 213
+  s_10d3da206143ac::t_3293f8fcbf1434 210-212
+  s_10d3da206143ac::t_7c731a03845d31 214-216
+  s_10d3da206143ac::t_da511137e66ed8 218-221
+  s_10d3da206143ac::t_8924c831b671c0 223-225
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.8",
+  "base_commit_sha": "ffa20d2ed93a0be78c31dcf39153c86c8d685b6d",
+  "prompts": {},
+  "sessions": {
+    "s_10d3da206143ac": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6d87ad2d-bce0-43ef-8602-21b6c79ab482",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Thomas Camlong <thomas@ajnart.fr>"
+    }
+  }
+}
