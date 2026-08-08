@@ -1,0 +1,9 @@
+{
+  "name": "ajnart.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Thomas Camlong — CV (HTML source + ATS-friendly PDF).",
+  "scripts": {
+    "pdf": "bash scripts/generate-pdf.sh"
+  }
+}

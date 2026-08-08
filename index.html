@@ -4,14 +4,12 @@
     <meta charset="utf-8" />
     <title>CV Thomas Camlong</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="Thomas Camlong - Software Engineer" name="description" />
+    <meta name="author" content="Thomas Camlong" />
+    <meta name="description" content="Thomas Camlong - Software Engineer" />
 
     <!-- OpenGraph / Share metadata -->
     <meta property="og:title" content="Thomas Camlong - Software Engineer" />
-    <meta
-      property="og:description"
-      content="FullStack Software Engineer passionate about open source. Check out my portfolio and get in touch."
-    />
+    <meta property="og:description" content="FullStack Software Engineer passionate about open source. Check out my portfolio and get in touch." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ajnart.github.io/" />
     <meta property="og:image" content="https://ajnart.github.io/images/main.jpg" />
@@ -19,20 +17,37 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Thomas Camlong - Software Engineer" />
-    <meta
-      name="twitter:description"
-      content="FullStack Software Engineer passionate about open source. Check out my portfolio and get in touch."
-    />
+    <meta name="twitter:description" content="FullStack Software Engineer passionate about open source. Check out my portfolio and get in touch." />
     <meta name="twitter:image" content="https://ajnart.github.io/images/main.jpg" />
 
     <link rel="shortcut icon" href="images/favicon.ico" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
-      rel="stylesheet"
-    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Thomas Camlong",
+        "jobTitle": "Software Engineer",
+        "url": "https://ajnart.github.io/",
+        "email": "mailto:thomascamlong@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR" },
+        "sameAs": ["https://github.com/ajnart", "https://linkedin.com/in/thomas-camlong"],
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Epitech" },
+          { "@type": "CollegeOrUniversity", "name": "Shibaura Institute of Technology" }
+        ]
+      }
+    </script>
+
+    <style>
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url('fonts/inter/inter.woff2') format('woff2');
+      }
+    </style>
 
     <!-- Cal.com booking script -->
     <script type="text/javascript">
@@ -49,7 +64,7 @@
             if (!cal.loaded) {
               cal.ns = {};
               cal.q = cal.q || [];
-              d.head.appendChild(d.createElement("script")).src = A;
+              d.head.appendChild(d.createElement('script')).src = A;
               cal.loaded = true;
             }
             if (ar[0] === L) {
@@ -58,18 +73,18 @@
               };
               const namespace = ar[1];
               api.q = api.q || [];
-              if (typeof namespace === "string") {
+              if (typeof namespace === 'string') {
                 cal.ns[namespace] = cal.ns[namespace] || api;
                 p(cal.ns[namespace], ar);
-                p(cal, ["initNamespace", namespace]);
+                p(cal, ['initNamespace', namespace]);
               } else p(cal, ar);
               return;
             }
             p(cal, ar);
           };
-      })(window, "https://app.cal.com/embed/embed.js", "init");
-      Cal("init", "30min", { origin: "https://app.cal.com" });
-      Cal.ns["30min"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
+      })(window, 'https://app.cal.com/embed/embed.js', 'init');
+      Cal('init', '30min', { origin: 'https://app.cal.com' });
+      Cal.ns['30min']('ui', { hideEventTypeDetails: false, layout: 'month_view' });
     </script>
 
     <style>
@@ -97,10 +112,10 @@
         color: var(--ink);
         background: #fff;
         font-family:
-          "Inter",
+          'Inter',
           -apple-system,
           BlinkMacSystemFont,
-          "Segoe UI",
+          'Segoe UI',
           Roboto,
           Helvetica,
           Arial,
@@ -146,7 +161,9 @@
       }
 
       .contact {
-        margin-top: 14px;
+        list-style: none;
+        margin: 14px 0 0;
+        padding: 0;
         font-size: 13px;
         color: var(--muted);
         display: flex;
@@ -221,14 +238,6 @@
         color: var(--ink);
       }
 
-      .entry-title a {
-        border-bottom: none;
-      }
-
-      .entry-title a:hover {
-        border-bottom: 1px solid var(--ink);
-      }
-
       .entry-dates {
         font-size: 12.5px;
         color: var(--faint);
@@ -240,6 +249,15 @@
         font-size: 12.5px;
         color: var(--muted);
         margin: 2px 0 0;
+      }
+
+      .entry-context a {
+        color: var(--ink);
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .entry-context a:hover {
+        border-bottom-color: var(--ink);
       }
 
       ul.bullets {
@@ -258,7 +276,7 @@
       }
 
       ul.bullets li::before {
-        content: "";
+        content: '';
         position: absolute;
         left: 2px;
         top: 9px;
@@ -282,7 +300,12 @@
       .row-item {
         display: flex;
         gap: 16px;
-        margin-bottom: 8px;
+        margin: 0 0 8px;
+      }
+
+      .row-item dt,
+      .row-item dd {
+        margin: 0;
       }
 
       .row-item:last-child {
@@ -328,28 +351,113 @@
 
       @media print {
         @page {
-          margin: 14mm;
+          size: A4;
+          margin: 11mm 13mm;
         }
+
+        html {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
         body {
-          font-size: 10.5pt;
+          font-size: 10pt;
+          line-height: 1.42;
         }
+
         .page {
           max-width: none;
           padding: 0;
         }
-        .summary {
-          max-width: none;
+
+        header {
+          margin-bottom: 12px;
         }
+
+        .summary {
+          margin-top: 12px;
+          max-width: none;
+          font-size: 10pt;
+        }
+
+        .contact {
+          margin-top: 8px;
+          font-size: 9.5pt;
+        }
+
+        section {
+          margin-top: 18px;
+          page-break-inside: auto;
+          break-inside: auto;
+        }
+
+        .section-title {
+          margin-bottom: 9px;
+          font-size: 9.5pt;
+          break-after: avoid;
+          page-break-after: avoid;
+        }
+
+        .entry {
+          margin-bottom: 13px;
+        }
+
+        .entry-head,
+        .entry-context {
+          break-inside: avoid;
+          page-break-inside: avoid;
+          break-after: avoid;
+          page-break-after: avoid;
+        }
+
+        .entry-dates {
+          font-size: 9.5pt;
+        }
+
+        .row-label {
+          flex-basis: 170px;
+          font-size: 9.5pt;
+        }
+
+        .row-value {
+          font-size: 9.5pt;
+        }
+
+        ul.bullets {
+          margin-top: 6px;
+        }
+
+        ul.bullets li {
+          font-size: 9.5pt;
+          line-height: 1.4;
+          margin-bottom: 3px;
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+
+        .skills {
+          margin-top: 6px;
+          font-size: 9.5pt;
+        }
+
+        p,
+        li {
+          orphans: 3;
+          widows: 3;
+        }
+
         a {
           border-bottom: none !important;
           color: var(--ink) !important;
         }
+
         .no-print {
           display: none !important;
         }
-        section,
-        .entry {
-          page-break-inside: avoid;
+
+        footer {
+          margin-top: 18px;
+          font-size: 8.5pt;
         }
       }
     </style>
@@ -360,264 +468,183 @@
       <header>
         <h1 class="name">Thomas Camlong</h1>
         <p class="role">Software Engineer</p>
-        <div class="contact">
-          <a href="https://github.com/ajnart" target="_blank" rel="noopener">github.com/ajnart</a>
-          <a href="https://linkedin.com/in/thomas-camlong" target="_blank" rel="noopener"
-            >linkedin.com/in/thomas-camlong</a
-          >
-          <a href="mailto:thomascamlong@gmail.com">thomascamlong@gmail.com</a>
-          <span>Paris, France</span>
-          <button
-            type="button"
-            class="no-print"
-            data-cal-link="ajnart/30min"
-            data-cal-namespace="30min"
-            data-cal-config='{"layout":"month_view"}'
-          >
-            Let's talk
-          </button>
-        </div>
+        <ul class="contact">
+          <li>
+            <a href="https://github.com/ajnart" target="_blank" rel="noopener">github.com/ajnart</a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/thomas-camlong" target="_blank" rel="noopener">linkedin.com/in/thomas-camlong</a>
+          </li>
+          <li>
+            <a href="mailto:thomascamlong@gmail.com">thomascamlong@gmail.com</a>
+          </li>
+          <li>Paris, France</li>
+          <li>
+            <button type="button" class="no-print" data-cal-link="ajnart/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}'>Let's talk</button>
+          </li>
+        </ul>
 
         <p class="summary">
-          Founding-minded software engineer building AI products, developer tooling, and open-source
-          software from zero to production. I enjoy owning products end-to-end, solving hard
-          engineering problems, and working closely with users to build intuitive experiences that
-          solve real problems. I use modern AI tooling to accelerate development while relying on
-          strong engineering fundamentals to build reliable, maintainable systems.
+          Founding-minded software engineer building AI products, developer tooling, and open-source software from zero to production. I own products end-to-end, solving hard
+          engineering problems and working closely with users to build intuitive experiences — while using modern AI tooling to accelerate development without compromising
+          engineering fundamentals.
         </p>
       </header>
 
       <section>
-        <h2 class="section-title">Professional Experiences</h2>
+        <h2 class="section-title">Experience</h2>
 
         <div class="entry">
           <div class="entry-head">
-            <h3 class="entry-title">
-              <a href="https://habs.ai" target="_blank" rel="noopener"
-                >Full-Stack Software Engineer at Habs AI</a
-              >
-            </h3>
-            <span class="entry-dates">Jan 2025 – Present</span>
+            <h3 class="entry-title">Full-Stack Software Engineer</h3>
+            <span class="entry-dates"><time datetime="2025-01">Jan 2025</time> – Present</span>
           </div>
-          <p class="entry-context">Full-time · Paris, France</p>
+          <p class="entry-context">
+            <span class="company"><a href="https://habs.ai" target="_blank" rel="noopener">Habs AI</a></span>
+            · <span class="employment-type">Full-time</span> · <span class="location">Paris, France</span>
+          </p>
           <ul class="bullets">
             <li>
-              Led development of the company's AI platform powering enterprise neuroscience studies,
-              integrating proprietary brain signal models with frontier LLMs to generate structured
+              Led development of the AI platform powering enterprise neuroscience studies, integrating proprietary brain-signal models with frontier LLMs to generate structured
               insights.
             </li>
             <li>
-              Built a centralized operations platform managing participant bookings, laboratory
-              workflows, questionnaires, and study execution, reducing operator workload by 70%.
+              Built a centralized operations platform managing participant bookings, laboratory workflows, questionnaires, and study execution, reducing operator workload by 70%.
             </li>
             <li>
-              Designed a highly configurable participant screening platform with behavioral
-              analytics, reducing study setup time by 50% while giving customers real-time
-              visibility into participant journeys.
+              Designed a highly configurable participant screening platform with behavioral analytics, reducing study setup time by 50% while giving customers real-time visibility
+              into participant journeys.
             </li>
             <li>
-              Built internal evaluation tooling, reducing feature validation cycles from hours to
-              minutes and enabling significantly faster experimentation and real-world model
+              Built internal evaluation tooling, reducing feature validation cycles from hours to minutes and enabling significantly faster experimentation and real-world model
               evaluation.
             </li>
             <li>
-              Architected and deployed production AI infrastructure on Azure Marketplace using MCP,
-              agents, and modern LLM tooling to orchestrate proprietary ML models and frontier
-              language models for the main insights product.
+              Architected and deployed production AI infrastructure on Azure Marketplace, using MCP, agents, and LLM tooling to orchestrate proprietary ML models and frontier LLMs
+              for the flagship insights product.
             </li>
-            <li>
-              Represented the company at VivaTech 2025 and 2026, showcasing the product to thousands
-              of attendees and partnering with Microsoft.
-            </li>
+            <li>Represented the company at VivaTech 2025 and 2026, showcasing the product to thousands of attendees and partnering with Microsoft.</li>
           </ul>
-          <p class="skills">
-            <span>Skills:</span> React · TypeScript · LLMOps · Dataviz · Agentic Framework · Context
-            Engineering
-          </p>
+          <p class="skills"><span>Skills:</span> React, TypeScript, LLMOps, Dataviz, Agentic Framework, Context Engineering</p>
         </div>
 
         <div class="entry">
           <div class="entry-head">
-            <h3 class="entry-title">
-              <a href="https://www.azad.bot/" target="_blank" rel="noopener"
-                >Founding Engineer at Kodu AI</a
-              >
-            </h3>
-            <span class="entry-dates">Aug 2024 – Jan 2025</span>
+            <h3 class="entry-title">Founding Engineer</h3>
+            <span class="entry-dates"><time datetime="2024-08">Aug 2024</time> – <time datetime="2025-01">Jan 2025</time></span>
           </div>
-          <p class="entry-context">6 months · Freelance · Tokyo, Japan</p>
+          <p class="entry-context">
+            <span class="company"><a href="https://www.azad.bot/" target="_blank" rel="noopener">Kodu AI</a></span>
+            · <span class="employment-type">Freelance</span> · <span class="location">Tokyo, Japan</span>
+          </p>
           <ul class="bullets">
+            <li>Joined as the first engineering hire, architecting the full-stack platform powering an AI coding assistant serving 10k+ active users and 5k+ paying customers.</li>
             <li>
-              Joined as the first engineering hire, architecting the full-stack platform powering an
-              AI coding assistant serving 10k+ active users and 5k+ paying customers.
-            </li>
-            <li>
-              Developed core features for the VS Code extension, helping grow the open-source
-              project to 5.3k+ GitHub stars while shipping product updates on a daily release
+              Developed core features for the VS Code extension, helping grow the open-source project to 5.3k+ GitHub stars while shipping product updates on a daily release
               cadence.
             </li>
             <li>
-              Built LLM infrastructure and agent workflows integrating frontier models, enabling
-              rapid experimentation driven by continuous customer feedback and community engagement.
+              Built LLM infrastructure and agent workflows integrating frontier models, enabling rapid experimentation driven by continuous customer feedback and community
+              engagement.
             </li>
-            <li>
-              Designed product engagement systems that improved user retention and contributed to
-              Kodu becoming one of the top 5 applications on OpenRouter.
-            </li>
+            <li>Designed product engagement systems that improved user retention and contributed to Kodu becoming one of the top 5 applications on OpenRouter.</li>
           </ul>
-          <p class="skills">
-            <span>Skills:</span> TypeScript · React · LLM Infrastructure · AI Agents · Product
-            Engineering · VS Code Extension
-          </p>
+          <p class="skills"><span>Skills:</span> TypeScript, React, LLM Infrastructure, AI Agents, Product Engineering, VS Code Extension</p>
         </div>
 
         <div class="entry">
           <div class="entry-head">
-            <h3 class="entry-title">
-              <a href="https://www.datadoghq.com/" target="_blank" rel="noopener"
-                >Software Engineering Intern at Datadog</a
-              >
-            </h3>
-            <span class="entry-dates">Mar 2024 – Sep 2024</span>
+            <h3 class="entry-title">Software Engineering Intern</h3>
+            <span class="entry-dates"><time datetime="2024-03">Mar 2024</time> – <time datetime="2024-09">Sep 2024</time></span>
           </div>
-          <p class="entry-context">6 months internship</p>
-          <ul class="bullets">
-            <li>
-              Developed features for Datadog Dashboards using React, TypeScript, and the company's
-              internal design system.
-            </li>
-            <li>
-              Implemented a redesign of the dashboard sharing experience, aligning interactions with
-              familiar collaboration patterns used by tools such as Google Drive, significantly
-              increasing feature adoption.
-            </li>
-            <li>
-              Participated in design discussions, code reviews, and large-scale frontend migrations
-              across a production codebase.
-            </li>
-          </ul>
-          <p class="skills">
-            <span>Skills:</span> React · TypeScript · Redux · React Query · CI/CD
+          <p class="entry-context">
+            <span class="company"><a href="https://www.datadoghq.com/" target="_blank" rel="noopener">Datadog</a></span>
+            · <span class="employment-type">Internship</span> · <span class="duration">6 months</span>
           </p>
+          <ul class="bullets">
+            <li>Developed features for Datadog Dashboards using React, TypeScript, and the company's internal design system.</li>
+            <li>
+              Implemented a redesign of the dashboard sharing experience, aligning interactions with familiar collaboration patterns used by tools such as Google Drive,
+              significantly increasing feature adoption.
+            </li>
+            <li>Participated in design discussions, code reviews, and large-scale frontend migrations across a production codebase.</li>
+          </ul>
+          <p class="skills"><span>Skills:</span> React, TypeScript, Redux, React Query, CI/CD</p>
         </div>
 
         <div class="entry">
           <div class="entry-head">
-            <h3 class="entry-title">
-              <a href="https://github.com/ajnart/homarr" target="_blank" rel="noopener"
-                >Founder &amp; Lead Maintainer - Homarr</a
-              >
-            </h3>
-            <span class="entry-dates">Mar 2022 – Present</span>
+            <h3 class="entry-title">Founder &amp; Lead Maintainer</h3>
+            <span class="entry-dates"><time datetime="2022-03">Mar 2022</time> – Present</span>
           </div>
-          <ul class="bullets">
-            <li>
-              Founded and architected an open-source self-hosted dashboard with 10k+ GitHub stars,
-              50M+ Docker pulls, and 74 contributors.
-            </li>
-            <li>
-              Built and grew an international open-source community of 6k+ Discord members,
-              coordinating contributions from 234 translators across 29 languages.
-            </li>
-            <li>
-              Led product direction, architecture, release management, and developer experience
-              while building AI-assisted contributor tooling for faster community development.
-            </li>
-            <li>
-              Designed and implemented an MCP server enabling AI agents to manage Homarr instances
-              through natural language.
-            </li>
-          </ul>
-          <p class="skills">
-            <span>Skills:</span> TypeScript · React · Open Source · Product Architecture · Developer
-            Experience · MCP
+          <p class="entry-context">
+            <span class="company"><a href="https://github.com/ajnart/homarr" target="_blank" rel="noopener">Homarr</a></span>
+            · <span class="employment-type">Open Source</span>
           </p>
+          <ul class="bullets">
+            <li>Founded and architected an open-source self-hosted dashboard with 10k+ GitHub stars, 50M+ Docker pulls, and 74 contributors.</li>
+            <li>Built and grew an international open-source community of 6k+ Discord members, coordinating contributions from 234 translators across 29 languages.</li>
+            <li>
+              Led product direction, architecture, release management, and developer experience, building AI-assisted contributor tooling to accelerate community development.
+            </li>
+            <li>Designed and implemented an MCP server enabling AI agents to manage Homarr instances through natural language.</li>
+          </ul>
+          <p class="skills"><span>Skills:</span> TypeScript, React, Open Source, Product Architecture, Developer Experience, MCP</p>
         </div>
 
         <div class="entry">
           <div class="entry-head">
-            <h3 class="entry-title">
-              <a href="https://dashboardicons.com" target="_blank" rel="noopener"
-                >Founder - DashboardIcons.com</a
-              >
-            </h3>
-            <span class="entry-dates">2025 – Present</span>
+            <h3 class="entry-title">Founder</h3>
+            <span class="entry-dates"><time datetime="2025-01">2025</time> – Present</span>
           </div>
-          <ul class="bullets">
-            <li>
-              Built and monetized an icon library containing 3,000+ high-quality dashboard icons.
-            </li>
-            <li>
-              Grew organic search traffic by an average of 30% month-over-month, reaching 2.5M+
-              monthly search impressions.
-            </li>
-            <li>
-              Built the platform from scratch and drove SEO strategy, resulting in 10M+ monthly page
-              views.
-            </li>
-          </ul>
-          <p class="skills">
-            <span>Skills:</span> SEO · TypeScript · Next.js · Product Engineering · Entrepreneurship
+          <p class="entry-context">
+            <span class="company"><a href="https://dashboardicons.com" target="_blank" rel="noopener">DashboardIcons.com</a></span>
+            · <span class="employment-type">Side Project</span>
           </p>
+          <ul class="bullets">
+            <li>Built and monetized an icon library containing 3,000+ high-quality dashboard icons.</li>
+            <li>Grew organic search traffic by an average of 30% month-over-month, reaching 2.5M+ monthly search impressions.</li>
+            <li>Built the platform from scratch and drove SEO strategy, resulting in 10M+ monthly page views.</li>
+          </ul>
+          <p class="skills"><span>Skills:</span> SEO, TypeScript, Next.js, Product Engineering, Entrepreneurship</p>
         </div>
 
         <div class="entry">
           <div class="entry-head">
-            <h3 class="entry-title">
-              <a
-                href="https://www.linkedin.com/company/creative-lift/"
-                target="_blank"
-                rel="noopener"
-                >React Developer Intern at CreativeLift</a
-              >
-            </h3>
-            <span class="entry-dates">Apr 2022 – Sep 2022</span>
+            <h3 class="entry-title">React Developer Intern</h3>
+            <span class="entry-dates"><time datetime="2022-04">Apr 2022</time> – <time datetime="2022-09">Sep 2022</time></span>
           </div>
-          <p class="entry-context">6 months internship</p>
-          <ul class="bullets">
-            <li>
-              Built 80+ reusable React and Material UI components powering the company's design
-              system.
-            </li>
-            <li>
-              Introduced Storybook for component documentation, improving developer experience and
-              accelerating UI development.
-            </li>
-            <li>
-              Collaborated closely with designers to deliver consistent interfaces using React,
-              Next.js, and TypeScript across client projects.
-            </li>
-          </ul>
-          <p class="skills">
-            <span>Skills:</span> React · Next.js · TypeScript · Material UI · Storybook
+          <p class="entry-context">
+            <span class="company"><a href="https://www.linkedin.com/company/creative-lift/" target="_blank" rel="noopener">CreativeLift</a></span>
+            · <span class="employment-type">Internship</span> · <span class="duration">6 months</span>
           </p>
+          <ul class="bullets">
+            <li>Built 80+ reusable React and Material UI components powering the company's design system.</li>
+            <li>Introduced Storybook for component documentation, improving developer experience and accelerating UI development.</li>
+            <li>Collaborated closely with designers to deliver consistent interfaces using React, Next.js, and TypeScript across client projects.</li>
+          </ul>
+          <p class="skills"><span>Skills:</span> React, Next.js, TypeScript, Material UI, Storybook</p>
         </div>
       </section>
 
       <section>
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="row-item">
-          <div class="row-label">Programming Languages</div>
-          <div class="row-value">Primarily: TypeScript, JavaScript, Python, Go, Node.js</div>
-        </div>
-        <div class="row-item">
-          <div class="row-label">Frontend</div>
-          <div class="row-value">React, NextJS, TailwindCSS, Vite</div>
-        </div>
-        <div class="row-item">
-          <div class="row-label">Backend</div>
-          <div class="row-value">
-            PostgreSQL · Redis · Hono · NestJS · Docker · Kubernetes · RabbitMQ · Cloudflare · REST
-            APIs · Go
-          </div>
-        </div>
-        <div class="row-item">
-          <div class="row-label">AI &amp; Machine Learning</div>
-          <div class="row-value">
-            TanStack Agents SDK · Vercel AI SDK · Mastra · MCP · Azure AI Foundry · Hugging Face ·
-            vLLM · RAG
-          </div>
-        </div>
+        <h2 class="section-title">Skills</h2>
+        <dl class="row-item">
+          <dt class="row-label">Programming Languages</dt>
+          <dd class="row-value">Primarily: TypeScript, JavaScript, Python, Go, Node.js</dd>
+        </dl>
+        <dl class="row-item">
+          <dt class="row-label">Frontend</dt>
+          <dd class="row-value">React, NextJS, TailwindCSS, Vite</dd>
+        </dl>
+        <dl class="row-item">
+          <dt class="row-label">Backend</dt>
+          <dd class="row-value">PostgreSQL, Redis, Hono, NestJS, Docker, Kubernetes, RabbitMQ, Cloudflare, REST APIs, Go</dd>
+        </dl>
+        <dl class="row-item">
+          <dt class="row-label">AI &amp; Machine Learning</dt>
+          <dd class="row-value">TanStack Agents SDK, Vercel AI SDK, Mastra, MCP, Azure AI Foundry, Hugging Face, vLLM, RAG</dd>
+        </dl>
       </section>
 
       <section>
@@ -625,21 +652,20 @@
         <div class="entry">
           <div class="entry-head">
             <h3 class="entry-title">Epitech - Master's Degree in Computer Science</h3>
-            <span class="entry-dates">Sep 2019 – Sep 2024</span>
+            <span class="entry-dates"><time datetime="2019-09">Sep 2019</time> – <time datetime="2024-09">Sep 2024</time></span>
           </div>
           <p class="entry-context">
-            Epitech is an IT school focused on learning programming with a hands-on project-based
-            learning approach. It is well known for its hard "piscine" intensive training period.
+            Epitech is an IT school focused on learning programming with a hands-on project-based learning approach. It is well known for its hard "piscine" intensive training
+            period.
           </p>
         </div>
         <div class="entry">
           <div class="entry-head">
             <h3 class="entry-title">Shibaura Institute of Technology</h3>
-            <span class="entry-dates">Sep 2022 – Sep 2023</span>
+            <span class="entry-dates"><time datetime="2022-09">Sep 2022</time> – <time datetime="2023-09">Sep 2023</time></span>
           </div>
           <p class="entry-context">
-            Student exchange year realized in Tokyo, Japan. SIT is the only private university of
-            science and technology selected for the Japanese government's exclusive Top Global
+            Student exchange year realized in Tokyo, Japan. SIT is the only private university of science and technology selected for the Japanese government's exclusive Top Global
             University Project.
           </p>
         </div>
